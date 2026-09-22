@@ -34,3 +34,5 @@ Link: https://trello.com/invite/b/6ab284c74b837ac9cd0b6a89/ATTI28a13e41eafdf2138
 
 ## Buscador, Filtrado o Categorización
 Se incluirá un filtro o buscador para encontrar más sencillamente una zapatilla, basándote en la marca, talla, color, precio.
+
+OOOO
