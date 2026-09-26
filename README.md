@@ -33,7 +33,8 @@ Link: https://trello.com/invite/b/6ab284c74b837ac9cd0b6a89/ATTI28a13e41eafdf2138
         - User
         - Date
      
-**Inventario Productos** (excel): *Trabajando en ello...*
+[📊 Inventario de zapatillas](https://urjc-my.sharepoint.com/:x:/g/personal/a_rodado_2025_alumnos_urjc_es/IQBJ9jFyPAADR5sfNATojpUjAY3aylIGvh9wK7SKImZvZDo?e=rH6fZ4)
+
 
 ## BUSCADOR, FILTRADO o CATEGORIZACIÓN
 Se incluirá un Buscador de modelo único para la entidad principal, pudiendo filtrar la búsqueda en función de los atributos que categorizan el producto como la marca, el precio o el deporte.
