@@ -1,0 +1,6 @@
+sneaker-card{
+    border: 1px solid #e0e0e0d4; /* Add a light gray border */
+    border_radius: 10px; /* Add rounded corners */
+    background-color: #ffffff; /* Set background color to white */
+    overflow: hidden; /* Hide any overflowing content */
+}
