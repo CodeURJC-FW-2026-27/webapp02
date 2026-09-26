@@ -1,52 +1,52 @@
-sneaker-card{
+.sneaker-card{
     border: 1px solid #e0e0e0cb; /* Add a light gray border */
     border_radius: 10px; /* Add rounded corners */
     background-color: #ffffff; /* Set background color to white */
     overflow: hidden; /* Hide any overflowing content */
 }
-sneaker-img{
+.sneaker-img{
     width: 100%; /* Make the image take up the full width of the card */
     height: 200px; /* Maintain aspect ratio */
     object-fit: cover; /* Remove any extra space below the image */
      
 }
 
-sneaker-brand{
+.sneaker-brand{
         font-size: 0.8rem; /* Set font size to 0.8rem */
         color:#ffffff7b;
 }
 
-sneaker-title{
+.sneaker-title{
     font-size: 1.1rem;
     font-weight: bold;
     color:#1e1c1ccb
 
 }
 
-sneaker-price{
+.sneaker-price{
     font-size: 1.2rem;
     font-weight: bold;
     color:#198114cb
 
 }
 
-sneaker-sport{
+.sneaker-sport{
     
 
 }
 
-sniker-size{
+.sneaker-size{
 
 }
 
-sneaker-color{
+.sneaker-color{
 
 }
-sneaker-description{
+.sneaker-description{
     
     
 }
 
-sneaker-stock{
+.sneaker-stock{
 
 }
