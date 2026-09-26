@@ -5,7 +5,7 @@ sneaker-card{
     overflow: hidden; /* Hide any overflowing content */
 }
 sneaker-img{
-    width: 50%; /* Make the image take up the full width of the card */
+    width: 100%; /* Make the image take up the full width of the card */
     height: 200px; /* Maintain aspect ratio */
     object-fit: cover; /* Remove any extra space below the image */
      
