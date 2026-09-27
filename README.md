@@ -28,7 +28,7 @@ Link: https://trello.com/invite/b/6ab284c74b837ac9cd0b6a89/ATTI28a13e41eafdf2138
         - Photo (cada una tendrá su foto principal y después se incluirán mas fotos de distintas vistas).    
 
     - **Entidad Secundaria: Reseña**
-        - Tex
+        - Text
         - Rating
         - User
         - Date
