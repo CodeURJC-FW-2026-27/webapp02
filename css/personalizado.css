@@ -82,3 +82,17 @@ footer.bg-dark {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+
+/* Formulario para añadir zapatillas */
+.formulario-zapatilla {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #edf5e8;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.formulario-zapatilla h2 {
+    color: #1e613d;
+}

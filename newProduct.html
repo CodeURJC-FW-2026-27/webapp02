@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/personalizado.css" rel="stylesheet">
+    </head>
+    <body>
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5">
+
+        <div class="formulario-zapatilla p-4 p-md-5">
+            <h2 class="text-center mb-4">Añadir zapatilla</h2>
+
+            <form>
+
+                <div class="row g-3">
+
+                    <!-- ID -->
+                    <div class="col-12 col-md-6">
+                        <label for="id-zapatilla" class="form-label">
+                            ID de la zapatilla: 
+                        </label>
+                        <input type="number" class="form-control"
+                               id="id-zapatilla" name="Id_Zapatilla"
+                               min="1" step="1" required>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="col-12 col-md-6">
+                        <label for="nombre" class="form-label">
+                            Nombre: 
+                        </label>
+                        <input type="text" class="form-control"
+                               id="nombre" name="Name"
+                               placeholder="Ej.: Pegasus 41" required>
+                    </div>
+
+                    <!-- Brand -->
+                    <div class="col-12 col-md-6">
+                        <label for="marca" class="form-label">
+                            Marca: 
+                        </label>
+                        <input type="text" class="form-control"
+                               id="marca" name="Brand"
+                               placeholder="Ej.: Nike" required>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="col-12 col-md-6">
+                        <label for="precio" class="form-label">
+                            Precio (€): 
+                        </label>
+                        <input type="number" class="form-control"
+                               id="precio" name="Price"
+                               min="0" step="0.01" required>
+                    </div>
+
+                    <!-- Size -->
+                    <div class="col-12 col-md-6">
+                        <label for="talla" class="form-label">
+                            Talla: 
+                        </label>
+                        <input type="number" class="form-control"
+                               id="talla" name="Size"
+                               min="1" step="0.5" required>
+                    </div>
+
+                    <!-- Colour -->
+                    <div class="col-12 col-md-6">
+                        <label for="color" class="form-label">
+                            Color: 
+                        </label>
+                        <input type="text" class="form-control"
+                               id="color" name="Colour"
+                               placeholder="Ej.: Blanco y verde" required>
+                    </div>
+
+                    <!-- Sport -->
+                    <div class="col-12 col-md-6">
+                        <label for="deporte" class="form-label">
+                            Deporte: 
+                        </label>
+                        <select class="form-select"
+                                id="deporte" name="Sport" required>
+                            <option value="" selected disabled>
+                                Selecciona un deporte
+                            </option>
+                            <option value="Fútbol">Fútbol</option>
+                            <option value="Baloncesto">Baloncesto</option>
+                            <option value="Running">Running</option>
+                        </select>
+                    </div>
+
+                    <!-- Stock -->
+                    <div class="col-12 col-md-6">
+                        <label for="stock" class="form-label">
+                            Stock: 
+                        </label>
+                        <input type="number" class="form-control"
+                               id="stock" name="Stock"
+                               min="0" step="1" required>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12">
+                        <label for="descripcion" class="form-label">
+                            Descripción: 
+                        </label>
+                        <textarea class="form-control"
+                                  id="descripcion" name="Description"
+                                  rows="4" required></textarea>
+                    </div>
+
+                    <!-- Photo -->
+                    <div class="col-12">
+                        <label for="foto" class="form-label">
+                            Foto principal: 
+                        </label>
+                        <input type="file" class="form-control"
+                               id="foto" name="Photo"
+                               accept="image/*" required>
+                    </div>
+
+                    <!-- Other views photos -->
+                    <div class="col-12">
+                        <label for="otras-fotos" class="form-label">
+                            Fotos adicionales (opcional): 
+                        </label>
+                        <input type="file" class="form-control"
+                               id="otras-fotos" name="AdditionalPhotos"
+                               accept="image/*" multiple>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="col-12 text-center mt-4">
+                        <button type="submit" class="btn btn-success">
+                            Añadir zapatilla
+                        </button>
+                        <button type="reset"
+                                class="btn btn-outline-secondary">
+                            Limpiar
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary"> 
+                            <a href="index.html" class="text-decoration-none text-dark">
+                                Volver al inicio
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+    </body>
+</html>
