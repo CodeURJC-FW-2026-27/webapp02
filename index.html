@@ -35,10 +35,13 @@
                             </ul>
                         </li>
                         <li> 
-                            <form> action="/search" method="get">
-                                <label for="search-box">search</label>
-                                <input type="search" id="search-box" name="q" placeholder="Buscar">
-                                <button type = "submit">search</button>
+                            <!--Form element that wraps the search bar and sends data to the '/search' URL using the GET method-->
+                            <form> <action = "/search" method = "get" class="search-container"> 
+                                <!--The name = "query" will be used to identify the search-->
+                                <input type="search" id="search-input" name="query" placeholder="Buscar">
+                                <button type = "submit" id= "search-button">  <!--Submit button that triggers the search form when clicked-->
+                                    <i class="bi bi-search"></i>  <!--Bootstrap 5 icon class that displays a magnifying glass-->
+                                </button>
                             </form>
                         </li>
                     </ul>
