@@ -1,5 +1,5 @@
 body {
-    background-color: #b2f3e1;
+    background-color: #6cee9e;
 }
 
 /* Navigation menu */
@@ -18,6 +18,17 @@ header.bg-dark {
     position: relative;
     isolation: isolate;
 }
+
+/* Product price */
+.card-body .text-center {
+    color: #09bc24;
+}
+
+/* Product name */
+.card-body h5 {
+    color: #000000;
+}
+
 
 /* Background image */
 header.bg-dark::before {
