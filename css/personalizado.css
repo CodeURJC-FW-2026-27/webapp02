@@ -1,0 +1,18 @@
+body {
+    background-color: #17ad74;
+}
+
+/* Navigation menu */
+.main-nav {
+    background-color: #a3e635;
+}
+
+/* Product cards */
+.catalog .card {
+    background-color: #edf5e8;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #20351c;
+}
