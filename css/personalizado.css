@@ -14,7 +14,33 @@ body {
 
 /* Header background */
 header.bg-dark {
-    background-color: #1e613d !important; /*Overrides the default Bootstrap dark background color with a custom green shade*/
+    background-color: #1e613d !important;
+    position: relative;
+    isolation: isolate;
+}
+
+/* Background image */
+header.bg-dark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/cabecera.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+/* Header title */
+header.bg-dark h1 {
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Header subtitle */
+header.bg-dark p {
+    color: white !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Footer background */
