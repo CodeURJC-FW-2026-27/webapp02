@@ -13,30 +13,59 @@
   <!--Main container centered on the page-->
   <main class="container py-5">
     <!--Row with align-items-center so the text is vertically centered with the image-->
-    <div class="row align-items-center">
-      <!--Left Column: Image and back button-->
+      <div class="row align-items-center">
+      <!--Left Column: Image, brand, price, sizes and back button-->
       <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
         <!--Product image-->
         <img src="images/MercurialSuperfly10.jpg"
              class="img-fluid rounded mb-4"
-             alt="Mercurial Superfly 10">     
+             alt="Mercurial Superfly 10">
+        <!--Brand-->
+        <p class="fs-5 mb-1">
+          <span class="text-muted">Marca:</span>
+          <strong>Nike</strong>
+        </p>
+        <!--Price (large)-->
+        <p class="display-4 fw-bold mb-4">279,99 €</p>
+        <!--Sizes: radio inputs styled as buttons (Bootstrap 5 only)-->
+        <fieldset class="mb-4">
+          <legend class="fs-5 fw-semibold mb-2">Tallas disponibles (EU)</legend>
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+            <input type="radio" class="btn-check" name="talla" id="talla-38" >
+            <label class="btn btn-outline-success" for="talla-38">38</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-39">
+            <label class="btn btn-outline-success" for="talla-39">39</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-40">
+            <label class="btn btn-outline-success" for="talla-40">40</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-41">
+            <label class="btn btn-outline-success" for="talla-41">41</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-42">
+            <label class="btn btn-outline-success" for="talla-42">42</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-43">
+            <label class="btn btn-outline-success" for="talla-43">43</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-44">
+            <label class="btn btn-outline-success" for="talla-44">44</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-45">
+            <label class="btn btn-outline-success" for="talla-45">45</label>
+            <input type="radio" class="btn-check" name="talla" id="talla-46">
+            <label class="btn btn-outline-success" for="talla-46">46</label>
+          </div>
+        </fieldset>
         <!--Container to position the button underneath-->
         <div>
           <!--Link to go back to the home page-->
-          <a href="index.html" class="btn btn-outline-dark">Volver</a>
+          <a href="index.html" class="btn btn-outline-success">Volver</a>
         </div>
       </div>
-
       <!--Right Column: Title, information and review button-->
       <div class="col-12 col-md-6">
         <h1 class="display-5 fw-bold mb-3">Mercurial Superfly 10</h1>
-        
         <!--Product description-->
         <p class="lead mb-4">
           Esta zapatilla es espectacular porque cuenta con una unidad de amortiguación específica que aporta una sensación de propulsión adicional, además de una textura adherente para un control total del balón.
-        </p>   
+        </p>
         <!--Button to add reviews-->
-        <button type="button" class="btn btn-primary">Añadir reseña</button>
+        <button type="button" class="btn btn-success">Añadir reseña</button>
       </div>
     </div>
   </main>
