@@ -25,7 +25,17 @@
           <span class="text-muted">Marca:</span>
           <strong>Nike</strong>
         </p>
-        <!--Price (large)-->
+        <!-- Product color -->
+        <p class="fs-5 mb-4">
+        <span class="text-muted">Color:</span>
+        <strong>Negro y azul</strong>
+        </p>
+        <!--Product ID-->
+        <p class="fs-5 mb-1">
+          <span class="text-muted">ID:</span>
+          <strong>1</strong>
+        </p>
+        <!--Price-->
         <p class="display-4 fw-bold mb-4">279,99 €</p>
         <!--Sizes: radio inputs styled as buttons (Bootstrap 5 only)-->
         <fieldset class="mb-4">
@@ -63,9 +73,24 @@
         <!--Product description-->
         <p class="lead mb-4">
           Esta zapatilla es espectacular porque cuenta con una unidad de amortiguación específica que aporta una sensación de propulsión adicional, además de una textura adherente para un control total del balón.
-        </p>
-        <!--Button to add reviews-->
-        <button type="button" class="btn btn-success">Añadir reseña</button>
+        </p>       
+        <!--Product stock-->
+        <div class="mb-3">
+          <button type="button" class="btn btn-outline-secondary">
+          Stock: 120 unidades
+          </button>
+        </div>
+        <!--Button to view reviews-->
+        <a href="reseñas.html" class="btn btn-success">Ver reseñas</a>
+        <!--Buttons to edit and delete the product-->
+        <div class="d-flex gap-2 mt-3">
+          <button type="button" class="btn btn-outline-success">
+             Editar
+          </button>
+          <button type="button" class="btn btn-outline-success">
+          Borrar
+          </button>
+        </div>
       </div>
     </div>
   </main>
