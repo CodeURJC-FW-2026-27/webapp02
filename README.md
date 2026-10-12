@@ -85,10 +85,10 @@ Párrafo describiendo su trabajo en esta práctica.
 Párrafo describiendo su trabajo en esta práctica.
 
 **5 commits más significativos:**
-- [Descripción del commit 1](URL_DEL_COMMIT)
-- [Descripción del commit 2](URL_DEL_COMMIT)
-- [Descripción del commit 3](URL_DEL_COMMIT)
-- [Descripción del commit 4](URL_DEL_COMMIT)
+- [Todas las Zapatillas](URL_DEL_COMMIT)
+- [Hover de las Zapatillas](URL_DEL_COMMIT)
+- [Boton Zapatilla(div)](URL_DEL_COMMIT)
+- [Poner 3 articulos fila](URL_DEL_COMMIT)
 - [Descripción del commit 5](URL_DEL_COMMIT)
 
 **5 ficheros en los que más ha participado:**
