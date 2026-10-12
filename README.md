@@ -11,7 +11,7 @@
     - Nombre Usuario: AlejandroRodado
 
 ## HERRAMIENTA DE ORGANIZACIÓN (Trello)
-Link: https://trello.com/invite/b/6ab284c74b837ac9cd0b6a89/ATTI28a13e41eafdf2138aa4e0254a875015243cO7E1/step-up-web
+Link: https://trello.com/b/QeTs9v9o/step-up-web
 
 ## FUNCIONALIDAD
 - Entidades:
@@ -40,3 +40,44 @@ Link: https://trello.com/invite/b/6ab284c74b837ac9cd0b6a89/ATTI28a13e41eafdf2138
 Se incluirá un Buscador de modelo único para la entidad principal, pudiendo filtrar la búsqueda en función de los atributos que categorizan el producto como la marca, el precio o el deporte.
 
 
+## Práctica 1
+
+### Capturas de pantalla
+
+#### Página principal
+![Página principal](docs/capturas/principal.png)
+
+#### Página de detalle
+![Página de detalle](docs/capturas/detalle.png)
+
+#### Página de nuevo elemento
+![Formulario de nueva zapatilla](docs/capturas/nueva-zapatilla.png)
+
+### Participación de los integrantes
+
+#### Raúl Cabezas Vallecillo
+
+**Tareas realizadas:**
+Párrafo describiendo su trabajo en esta práctica.
+
+**5 commits más significativos:**
+- [Descripción del commit 1](URL_DEL_COMMIT)
+- [Descripción del commit 2](URL_DEL_COMMIT)
+- [Descripción del commit 3](URL_DEL_COMMIT)
+- [Descripción del commit 4](URL_DEL_COMMIT)
+- [Descripción del commit 5](URL_DEL_COMMIT)
+
+**5 ficheros en los que más ha participado:**
+- [Nombre del fichero 1](URL_DEL_FICHERO)
+- [Nombre del fichero 2](URL_DEL_FICHERO)
+- [Nombre del fichero 3](URL_DEL_FICHERO)
+- [Nombre del fichero 4](URL_DEL_FICHERO)
+- [Nombre del fichero 5](URL_DEL_FICHERO)
+
+#### Sergio García García
+
+Repetir los tres apartados con su participación.
+
+#### Alejandro Rodado López de la Reina
+
+Repetir los tres apartados con tu participación.
