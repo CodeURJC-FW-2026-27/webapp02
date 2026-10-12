@@ -45,13 +45,18 @@ Se incluirá un Buscador de modelo único para la entidad principal, pudiendo fi
 ### Capturas de pantalla
 
 #### Página principal
-![Página principal](docs/capturas/principal.png)
+![Página principal (Vista 1)](capturaspantallaP1/PantallaInicio1.png)
+![Página principal (Vista 2)](capturaspantallaP1/PantallaInicio2.png)
+![Página principal (Vista 3)](capturaspantallaP1/PantallaInicio3.png)
 
 #### Página de detalle
-![Página de detalle](docs/capturas/detalle.png)
+![Página de detalle (Vista 1)](capturaspantallaP1/PantallaProducto1.png)
+![Página de detalle (Vista 2)](capturaspantallaP1/PantallaProducto2.png)
+![Página de detalle (Vista 1 página de reseñas)](capturaspantallaP1/Reseñas1.png)
+![Página de detalle (Vista 2 página de reseñas)](capturaspantallaP1/Reseñas2.png)
 
 #### Página de nuevo elemento
-![Formulario de nueva zapatilla](docs/capturas/nueva-zapatilla.png)
+![Formulario de nueva zapatilla](capturaspantallaP1/FormularioNuevaZapatilla.png)
 
 ### Participación de los integrantes
 
@@ -76,8 +81,38 @@ Párrafo describiendo su trabajo en esta práctica.
 
 #### Sergio García García
 
-Repetir los tres apartados con su participación.
+**Tareas realizadas:**
+Párrafo describiendo su trabajo en esta práctica.
+
+**5 commits más significativos:**
+- [Descripción del commit 1](URL_DEL_COMMIT)
+- [Descripción del commit 2](URL_DEL_COMMIT)
+- [Descripción del commit 3](URL_DEL_COMMIT)
+- [Descripción del commit 4](URL_DEL_COMMIT)
+- [Descripción del commit 5](URL_DEL_COMMIT)
+
+**5 ficheros en los que más ha participado:**
+- [Nombre del fichero 1](URL_DEL_FICHERO)
+- [Nombre del fichero 2](URL_DEL_FICHERO)
+- [Nombre del fichero 3](URL_DEL_FICHERO)
+- [Nombre del fichero 4](URL_DEL_FICHERO)
+- [Nombre del fichero 5](URL_DEL_FICHERO)
 
 #### Alejandro Rodado López de la Reina
 
-Repetir los tres apartados con tu participación.
+**Tareas realizadas:**
+Párrafo describiendo su trabajo en esta práctica.
+
+**5 commits más significativos:**
+- [Descripción del commit 1](URL_DEL_COMMIT)
+- [Descripción del commit 2](URL_DEL_COMMIT)
+- [Descripción del commit 3](URL_DEL_COMMIT)
+- [Descripción del commit 4](URL_DEL_COMMIT)
+- [Descripción del commit 5](URL_DEL_COMMIT)
+
+**5 ficheros en los que más ha participado:**
+- [Nombre del fichero 1](URL_DEL_FICHERO)
+- [Nombre del fichero 2](URL_DEL_FICHERO)
+- [Nombre del fichero 3](URL_DEL_FICHERO)
+- [Nombre del fichero 4](URL_DEL_FICHERO)
+- [Nombre del fichero 5](URL_DEL_FICHERO)
