@@ -104,18 +104,20 @@ También hice otros commits arreglando cosas o poniendo cosas muy sútiles, que 
 #### Alejandro Rodado López de la Reina
 
 **Tareas realizadas:**
-Párrafo describiendo su trabajo en esta práctica.
+En términos generales me he encargado de la distribución de tareas y labores de organización, como el desarrollo del mural en Trello o el esqueleto del excel del inventario de productos, y de desarrollar mi parte correspondiente en la propia web. Esto se ve en el historial de commits con la aplicación del templeate seleccionado principalmente.
+Después di forma a un .css personalizado para los botones y tarjetas de producto que trabaja sobre el propio fichero css que nos venía con la plantilla de bootstrap para así poder mantener el estilo de nuestra propia marca.
+A continuación seguí dándole forma a la página principal con los colores y su formato, con el logo de la marca en la pestaña de navegación, las carpetas de las imágenes y capturas de pantalla para el readme…
+Por último me encargué de la codificación del formulario de nuevo producto y de realizar correcciones en las cabeceras (Navegation) de todos los html, con los enlaces a las páginas principales y a otras disponibles en la barra de navegación de la cabecera tanto en la páginas principal como en las demás.
 
 **5 commits más significativos:**
-- [Descripción del commit 1](URL_DEL_COMMIT)
-- [Descripción del commit 2](URL_DEL_COMMIT)
-- [Descripción del commit 3](URL_DEL_COMMIT)
-- [Descripción del commit 4](URL_DEL_COMMIT)
-- [Descripción del commit 5](URL_DEL_COMMIT)
+- [Añadir template y carpeta de imágenes de productos](URL_DEL_COMMIT)
+- [Logo en la pestaña de navegación](URL_DEL_COMMIT)
+- [Diseño de la cabecera](URL_DEL_COMMIT)
+- [Formulario de nuevo producto](URL_DEL_COMMIT)
+- [CSS personalizado](URL_DEL_COMMIT)
 
-**5 ficheros en los que más ha participado:**
-- [Nombre del fichero 1](URL_DEL_FICHERO)
-- [Nombre del fichero 2](URL_DEL_FICHERO)
-- [Nombre del fichero 3](URL_DEL_FICHERO)
-- [Nombre del fichero 4](URL_DEL_FICHERO)
-- [Nombre del fichero 5](URL_DEL_FICHERO)
+**Ficheros en los que más ha participado:**
+- [newProduct.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
+- [personalizado.css](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/css/personalizado.css)
+- [index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
+- [README.md](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
