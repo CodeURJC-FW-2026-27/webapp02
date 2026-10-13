@@ -76,12 +76,9 @@ Por último, cabe mencionar que todo el código que escribí fue debidamente com
 - Corrección de error importante tras añadir cabecera y pie de página que impedía que el menú desplegable y la lupa aparecieran (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2e2048a127c0a386d13ffe1a5c4692800e30f853)
 
 **5 ficheros en los que más ha participado:**
-- [Nombre del fichero 1](URL_DEL_FICHERO)
-- [Nombre del fichero 2](URL_DEL_FICHERO)
-- [Nombre del fichero 3](URL_DEL_FICHERO)
-- [Nombre del fichero 4](URL_DEL_FICHERO)
-- [Nombre del fichero 5](URL_DEL_FICHERO)
-
+- producto.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/producto.html)
+- reseñas.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/rese%C3%B1as.html)
+- index.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
 #### Sergio García García
 
 **Tareas realizadas:**
