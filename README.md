@@ -68,17 +68,17 @@ Hay otros commits que hice solucionando errores importantes que la rúbrica que 
 Por último, cabe mencionar que todo el código que escribí fue debidamente comentado en inglés para su mejor comprensión y todo el código está en dicho idioma(excepto las palabras que vayan a ser visibles para el usuario en la web, lo que resulta evidente), lo que fue posible en parte gracias a la herramienta: Traductor de Google.
 
 **5 commits más significativos:**
-- [Barra de búsqueda] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/dc4173cf83f21be86e78bada836b66ba57ec4458)
-- [Desarrollo de página] de detalle del producto (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/ae9d9f885d888199877e43132f87c551ed230fad)
-- [Mejora del producto que incluía marca, precio y tallas] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2d6db360cc3234c55d379b73c30a4cd2013b6f01)
-- [Página de producto casi definitiva y pagina de reseñas al completo] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/860d4daa0ac58d08beaafe42a843491e4c5b3eab)
-- [Corrección de error importante tras añadir cabecera y pie de página que impedía que el menú desplegable y la lupa aparecieran] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2e2048a127c0a386d13ffe1a5c4692800e30f853)
+- [Barra de búsqueda](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/dc4173cf83f21be86e78bada836b66ba57ec4458)
+- [Desarrollo de página de detalle del producto](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/ae9d9f885d888199877e43132f87c551ed230fad)
+- [Mejora del producto que incluía marca, precio y tallas](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2d6db360cc3234c55d379b73c30a4cd2013b6f01)
+- [Página de producto casi definitiva y pagina de reseñas al completo](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/860d4daa0ac58d08beaafe42a843491e4c5b3eab)
+- [Corrección de error importante tras añadir cabecera y pie de página que impedía que el menú desplegable y la lupa aparecieran](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2e2048a127c0a386d13ffe1a5c4692800e30f853)
 
 **5 ficheros en los que más ha participado:**
-- [producto.html] (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/producto.html)
-- [index.html] (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
-- [newProduct.html] (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
-- [README.md] (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
+- [producto.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/producto.html)
+- [index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
+- [newProduct.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
+- [README.md](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
 #### Sergio García García
 
 Lo primero que hice fue poner un filtrado para las zapatillas de distintos tipo (Fútbol, Baloncesto y Running), y quitar un boton que no nos hacia falta.
@@ -88,11 +88,11 @@ Luego cuando ya estaba editado el boton (div) de las zapatillas añadí todas la
 También hice otros commits arreglando cosas o poniendo cosas muy sútiles, que no tenían tanta importancia como otros mas grandes.
 
 **5 commits más significativos:**
-- [Todas las Zapatillas] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/c41b5e759fd59ff87b2cbfe30e0d855727465b06)
-- [Hover de las Zapatillas] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/494c4df83b871e764be9cbc24aaf69372139a189)
+- [Todas las Zapatillas](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/c41b5e759fd59ff87b2cbfe30e0d855727465b06)
+- [Hover de las Zapatillas](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/494c4df83b871e764be9cbc24aaf69372139a189)
 - [Boton Zapatilla(div)](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/3fec68a9ebc06ec37d6c17be25496a2b1998a100)
-- [Poner 3 articulos fila] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/5c8166dea2b112fb4bc352383bffc9ab778e7656)
-- [Filtro Zapatillas, y quitar about] (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/e31dc402b013707c92ff1c0bba6c0547cabb6ad8)
+- [Poner 3 articulos fila](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/5c8166dea2b112fb4bc352383bffc9ab778e7656)
+- [Filtro Zapatillas, y quitar about](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/e31dc402b013707c92ff1c0bba6c0547cabb6ad8)
 
 **Ficheros en los que más ha participado:**
 - [index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
