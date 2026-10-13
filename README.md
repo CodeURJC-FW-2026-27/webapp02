@@ -45,18 +45,17 @@ Se incluirá un Buscador de modelo único para la entidad principal, pudiendo fi
 ### Capturas de pantalla
 
 #### Página principal
-![Página principal (Vista 1)](capturaspantallaP1/PantallaInicio1.png)
-![Página principal (Vista 2)](capturaspantallaP1/PantallaInicio2.png)
-![Página principal (Vista 3)](capturaspantallaP1/PantallaInicio3.png)
+![Página principal (Vista 1)](capturaspantallaP1/PP1.png)
+![Página principal (Vista 2)](capturaspantallaP1/PP2.png)
+![Página principal (Vista 3)](capturaspantallaP1/PP3.png)
 
 #### Página de detalle
-![Página de detalle (Vista 1)](capturaspantallaP1/PantallaProducto1.png)
-![Página de detalle (Vista 2)](capturaspantallaP1/PantallaProducto2.png)
-![Página de detalle (Vista 1 página de reseñas)](capturaspantallaP1/Reseñas1.png)
-![Página de detalle (Vista 2 página de reseñas)](capturaspantallaP1/Reseñas2.png)
+![Página de detalle (Vista 1)](capturaspantallaP1/PPR1.png)
+![Página de detalle (Vista 2)](capturaspantallaP1/PPR2.png)
+![Página de detalle (Vista 3)](capturaspantallaP1/PPR3.png)
 
 #### Página de nuevo elemento
-![Formulario de nueva zapatilla](capturaspantallaP1/FormularioNuevaZapatilla.png)
+![Formulario de nueva zapatilla](capturaspantallaP1/F1.png)
 
 ### Participación de los integrantes
 
