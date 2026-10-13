@@ -96,3 +96,16 @@ footer.bg-dark {
 .formulario-zapatilla h2 {
     color: #1e613d;
 }
+
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.header-logo {
+    width: 50px;
+    height: auto;
+}
