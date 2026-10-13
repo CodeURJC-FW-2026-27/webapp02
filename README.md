@@ -63,10 +63,9 @@ Se incluirá un Buscador de modelo único para la entidad principal, pudiendo fi
 #### Raúl Cabezas Vallecillo
 En primer lugar, eliminé el botón del carrito que no resultaba necesario para los requisitos de la práctica. Añadí un cuadro de búsqueda en la parte de la cabecera, incluyendo un campo de texto y un botón con un icono de lupa para buscar, que incorporé utilizando boostrap icons.
 También desarrollé la pagina de detalle de una de las zapatillas, que al principio sólo incluía imagen, descripción, nombre de la zapatilla, botón de "ver reseñas" y botón de volver a la página principal, pero que más adelante mejoré para añadir stock, id, color, etc; con el objetivo de que cuadrara con el formulario que hizo mi compañero Alejandro de "añadir zapatilla", ya que ambos debían tener los mismos datos. También añadí dos botones de edición y borrado del producto.
-También hice la página completa de reseñas, donde se pueden apreciar tres reseñas "falsas" cuyo objetivo es demostrar la forma que tendrán en un futuro cuando realmente las implementemos, con celdas para cada usuario, que incluyen la valoración del usuario con estrellas (que actualmente son texto, no son reales), nombre del usuario, fecha y comentario acerca del producto, tal como se prometió en la entidad secundaria. Más adelante, añadí un formulario completo para que el usuario pudiera añadir sus propias reseñas; pudiendo (y debiendo) añadir el nombre de usuario, fecha, valoración y descripción, con los atributos que consideré más adecuados para rellenar los campos adecuadamente.
-Hay otros commits que hice solucionando errores importantes que la rúbrica de la práctica exigía, por ejemplo, añadir la cabecera y pie de página a la pagina de producto y reseñas, corregir un error que cometí con el menú desplegable y el símbolo de la lupa al hacer dicha acción, o corregir la columna con los datos de la zapatilla en la que había un espacio innecesario entre el color y el id.
+También hice la página completa de reseñas, donde se pueden apreciar tres reseñas "falsas" cuyo objetivo es demostrar la forma que tendrán en un futuro cuando realmente las implementemos, con celdas para cada usuario, que incluyen la valoración del usuario con estrellas (que actualmente son texto, no son reales), nombre del usuario, fecha y comentario acerca del producto, tal como se prometió en la entidad secundaria. Más adelante, añadí un formulario completo para que el usuario pudiera añadir sus propias reseñas; pudiendo (y debiendo) añadir el nombre de usuario, fecha, valoración y descripción, con los atributos que consideré más adecuados para rellenar los campos adecuadamente. Finalmente eliminé el botón de reseñas para unirlas a la pagina de detalle, como exigía la rúbrica.
+Hay otros commits que hice solucionando errores importantes que la rúbrica que la práctica exigía, por ejemplo, añadir la cabecera y pie de página a la pagina de producto y nuevo producto, corregir un error que cometí con el menú desplegable y el símbolo de la lupa al hacer dicha acción, o corregir la columna con los datos de la zapatilla en la que había un espacio innecesario entre el color y el id.
 Por último, cabe mencionar que todo el código que escribí fue debidamente comentado en inglés para su mejor comprensión y todo el código está en dicho idioma(excepto las palabras que vayan a ser visibles para el usuario en la web, lo que resulta evidente), lo que fue posible en parte gracias a la herramienta: Traductor de Google.
-
 
 **5 commits más significativos:**
 - Barra de búsqueda (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/dc4173cf83f21be86e78bada836b66ba57ec4458)
@@ -77,8 +76,9 @@ Por último, cabe mencionar que todo el código que escribí fue debidamente com
 
 **5 ficheros en los que más ha participado:**
 - producto.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/producto.html)
-- reseñas.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/rese%C3%B1as.html)
 - index.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
+- newProduct.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
+- README.md (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
 #### Sergio García García
 
 Lo primero que hice fue poner un filtrado para las zapatillas de distintos tipo (Fútbol, Baloncesto y Running), y quitar un boton que no nos hacia falta.
