@@ -108,4 +108,5 @@ footer.bg-dark {
 .header-logo {
     width: 55px;
     height: auto;
+    border-radius:12px;
 }
