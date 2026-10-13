@@ -110,11 +110,11 @@ A continuación seguí dándole forma a la página principal con los colores y s
 Por último me encargué de la codificación del formulario de nuevo producto y de realizar correcciones en las cabeceras (Navegation) de todos los html, con los enlaces a las páginas principales y a otras disponibles en la barra de navegación de la cabecera tanto en la páginas principal como en las demás.
 
 **5 commits más significativos:**
-- [Añadir template y carpeta de imágenes de productos](URL_DEL_COMMIT)
-- [Logo en la pestaña de navegación](URL_DEL_COMMIT)
-- [Diseño de la cabecera](URL_DEL_COMMIT)
-- [Formulario de nuevo producto](URL_DEL_COMMIT)
-- [CSS personalizado](URL_DEL_COMMIT)
+- [Añadir template y carpeta de imágenes de productos](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/3878cd61e9ec325f2df9cea76fe779052568fc01)
+- [Logo en la pestaña de navegación](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/4165849ef7c46c1d0771a907d5ccfba2f4d2c325)
+- [Diseño de la cabecera](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/1a297b55c33108fe826742c546150fa862c74481)
+- [Formulario de nuevo producto](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/8dfb1561df20e8a1da12a65180ac1d1fca64eceb)
+- [CSS personalizado](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/ace86c53c42abd79f303c96d7d02b77b3dcc6dc8)
 
 **Ficheros en los que más ha participado:**
 - [newProduct.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
