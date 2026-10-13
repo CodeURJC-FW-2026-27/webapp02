@@ -85,21 +85,24 @@ Por último, cabe mencionar que todo el código que escribí fue debidamente com
 #### Sergio García García
 
 **Tareas realizadas:**
-Párrafo describiendo su trabajo en esta práctica.
+Lo primero que hice fue poner un filtrado para las zapatillas de distintos tipo (Fútbol, Baloncesto y Running), y quitar un boton que no nos hacia falta.
+Luego, como la rúbrica nos pedía que la pagina tenia que tener solo 3 articulos por línea para pantallas grandes.
+Yo fui el que editó el botón de cada zapatilla para que tuviera el borde redondo, el hover, y asi se viera vas estilizado y bonito.
+Luego cuando ya estaba editado el boton (div) de las zapatillas añadí todas las zapatillas que teniamos (minimo 9).
+También hice otros commits arreglando cosas o poniendo cosas muy sútiles, que no tenían tanta importancia como otros mas grandes.
 
 **5 commits más significativos:**
-- [Todas las Zapatillas](URL_DEL_COMMIT)
-- [Hover de las Zapatillas](URL_DEL_COMMIT)
-- [Boton Zapatilla(div)](URL_DEL_COMMIT)
-- [Poner 3 articulos fila](URL_DEL_COMMIT)
-- [Descripción del commit 5](URL_DEL_COMMIT)
+- Todas las Zapatillas (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/c41b5e759fd59ff87b2cbfe30e0d855727465b06)
+- Hover de las Zapatillas (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/494c4df83b871e764be9cbc24aaf69372139a189)
+- Boton Zapatilla(div)(https://github.com/CodeURJC-FW-2026-27/webapp02/commit/3fec68a9ebc06ec37d6c17be25496a2b1998a100)
+- Poner 3 articulos fila (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/5c8166dea2b112fb4bc352383bffc9ab778e7656)
+- Filtro Zapatillas, y quitar about (https://github.com/CodeURJC-FW-2026-27/webapp02/commit/e31dc402b013707c92ff1c0bba6c0547cabb6ad8)
 
-**5 ficheros en los que más ha participado:**
-- [Index.html](URL_DEL_FICHERO)
-- [Productos.html](URL_DEL_FICHERO)
-- [Nombre del fichero 3](URL_DEL_FICHERO)
-- [Nombre del fichero 4](URL_DEL_FICHERO)
-- [Nombre del fichero 5](URL_DEL_FICHERO)
+**Ficheros en los que más ha participado:**
+- [index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
+- [personalizado.css](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/css/personalizado.css)
+- [README.md](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
+  
 
 #### Alejandro Rodado López de la Reina
 
