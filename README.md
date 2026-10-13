@@ -81,7 +81,6 @@ Por último, cabe mencionar que todo el código que escribí fue debidamente com
 - index.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
 #### Sergio García García
 
-**Tareas realizadas:**
 Lo primero que hice fue poner un filtrado para las zapatillas de distintos tipo (Fútbol, Baloncesto y Running), y quitar un boton que no nos hacia falta.
 Luego, como la rúbrica nos pedía que la pagina tenia que tener solo 3 articulos por línea para pantallas grandes.
 Yo fui el que editó el botón de cada zapatilla para que tuviera el borde redondo, el hover, y asi se viera vas estilizado y bonito.
@@ -103,7 +102,6 @@ También hice otros commits arreglando cosas o poniendo cosas muy sútiles, que 
 
 #### Alejandro Rodado López de la Reina
 
-**Tareas realizadas:**
 En términos generales me he encargado de la distribución de tareas y labores de organización, como el desarrollo del mural en Trello o el esqueleto del excel del inventario de productos, y de desarrollar mi parte correspondiente en la propia web. Esto se ve en el historial de commits con la aplicación del templeate seleccionado principalmente.
 Después di forma a un .css personalizado para los botones y tarjetas de producto que trabaja sobre el propio fichero css que nos venía con la plantilla de bootstrap para así poder mantener el estilo de nuestra propia marca.
 A continuación seguí dándole forma a la página principal con los colores y su formato, con el logo de la marca en la pestaña de navegación, las carpetas de las imágenes y capturas de pantalla para el readme…
