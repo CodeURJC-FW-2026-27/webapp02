@@ -77,8 +77,8 @@ Por último, cabe mencionar que todo el código que escribí fue debidamente com
 **5 ficheros en los que más ha participado:**
 - producto.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/producto.html)
 - index.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
--newProduct.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
--README.md (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
+- newProduct.html (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/newProduct.html)
+- README.md (https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
 #### Sergio García García
 
 Lo primero que hice fue poner un filtrado para las zapatillas de distintos tipo (Fútbol, Baloncesto y Running), y quitar un boton que no nos hacia falta.
