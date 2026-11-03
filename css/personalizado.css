@@ -110,3 +110,41 @@ footer.bg-dark {
     height: auto;
     border-radius:12px;
 }
+
+
+.search-container {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #000000; /* Borde negro acorde a tus tarjetas */
+    border-radius: 50px;      /* Hace la barra en forma de píldora */
+    overflow: hidden;         /* Oculta lo que sobresalga para respetar el redondeo */
+    padding: 3px 6px;
+    background-color: #ffffff; /* Fondo blanco */
+    margin-left: auto; /* Esto empuja el buscador completamente hacia la derecha */
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: transparent;
+}
+
+#search-button {
+    background-color: #1e613d; /* Usa tu verde oscuro principal del header */
+    color: white;             /* Color del ícono de la lupa */
+    border: none;
+    border-radius: 50%;       /* Convierte el botón en un círculo perfecto */
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #09bc24; /* Cambia al verde brillante de tus precios al pasar el mouse */
+}

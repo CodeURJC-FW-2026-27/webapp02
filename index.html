@@ -26,6 +26,8 @@
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <!-- 1. Aquí van los enlaces de la izquierda -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="newProduct.html">Añadir Zapatilla</a></li>
@@ -44,15 +46,16 @@
                             <li><a class="dropdown-item" href="#!">Running</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <form action="/search" method="get" class="search-container">
-                            <input type="search" id="search-input" name="query" placeholder="Buscar">
-                            <button type="submit" id="search-button">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </form>
-                    </li>
                 </ul>
+
+                <!-- 2. El formulario va FUERA de la lista y con 'ms-auto' para irse a la derecha -->
+                <form action="/search" method="get" class="search-container ms-auto d-flex">
+                    <input type="search" id="search-input" name="query" placeholder="Buscar">
+                    <button type="submit" id="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
             </div>
         </div>
     </nav>
