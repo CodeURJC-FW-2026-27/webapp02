@@ -100,9 +100,19 @@
                         <label for="talla" class="form-label">
                             Talla: 
                         </label>
-                        <input type="number" class="form-control"
-                               id="talla" name="Size"
-                               min="1" step="0.5" required>
+                        <div class="tallas-botones">
+                            <button type="button" class="btn-talla" data-talla="38">38</button>
+                            <button type="button" class="btn-talla" data-talla="39">39</button>
+                            <button type="button" class="btn-talla" data-talla="40">40</button>
+                            <button type="button" class="btn-talla" data-talla="41">41</button>
+                            <button type="button" class="btn-talla" data-talla="42">42</button>
+                            <button type="button" class="btn-talla" data-talla="43">43</button>
+                            <button type="button" class="btn-talla" data-talla="44">44</button>
+                            <button type="button" class="btn-talla" data-talla="45">45</button>
+                            <button type="button" class="btn-talla" data-talla="46">46</button>
+                        </div>
+                        <input type="hidden" id="talla-seleccionada" name="Size" required>
+                        <small class="text-muted">Talla seleccionada: <span id="mostrar-talla" class="fw-bold text-dark">Ninguna</span></small>
                     </div>
 
                     <!-- Colour -->
