@@ -8,5 +8,7 @@ router.get('/', async (req, res) => {
   
     res.render('index', { shoes: shoesList });
 });
-
+router.get('/shoe/new', (req, res) => {
+    res.render('newProduct');
+});
 export default router;
