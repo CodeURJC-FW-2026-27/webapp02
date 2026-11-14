@@ -1,0 +1,47 @@
+[
+  {
+    "shoeId": 1,
+    "name": "Mercurial Superfly 10",
+    "brand": "Nike",
+    "price": 279.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "colour": "Negro y azul",
+    "sport": "Fútbol",
+    "stock": 120,
+    "description": "Esta zapatilla es espectacular porque cuenta con una unidad de amortiguación específica que aporta una sensación de propulsión adicional, además de una textura adherente para un control total del balón.",
+    "imageFilename": "MercurialSuperfly10.jpg",
+    "reviews": [
+      {
+        "user": "Raúl C.",
+        "date": "2026-09-15",
+        "rating": 5,
+        "text": "Muy buenas zapatillas y muy cómodas."
+      },
+      {
+        "user": "Alejandro R.",
+        "date": "2026-09-21",
+        "rating": 4,
+        "text": "Muy cómodas y ligeras, pero demasiado caras en mi opinión."
+      },
+      {
+        "user": "Sergio G.",
+        "date": "2026-10-02",
+        "rating": 1,
+        "text": "Zapatillas horribles, se me rompieron el primer día que las usé. No las recomiendo."
+      }
+    ]
+  },
+  {
+    "shoeId": 2,
+    "name": "Predator Elite FG",
+    "brand": "Adidas",
+    "price": 260.00,
+    "sizes": [39, 40, 41, 42, 43, 44],
+    "colour": "Negro y rojo",
+    "sport": "Fútbol",
+    "stock": 85,
+    "description": "Diseñada para el máximo control y precisión en el golpeo sobre césped natural seco.",
+    "imageFilename": "Predator Elite FG.jpg",
+    "reviews": []
+  }
+]
