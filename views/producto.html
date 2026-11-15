@@ -23,55 +23,47 @@
     <div class="row align-items-start">
       <!--Left Column: Image, brand, price, sizes, ID and back button-->
       <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
-        <!--Product image-->
-        <img src="images/MercurialSuperfly10.jpg"
-             class="img-fluid rounded mb-4"
-             alt="Mercurial Superfly 10">
+        <!--Product image-->  
+      <img src="/uploads/{{shoe.imageFilename}}" class="img-fluid rounded mb-4" alt="{{shoe.name}}">
+      <!--Name-->
+      <h1 class="display-5 fw-bold mb-3">{{shoe.name}}</h1>
         <!--Brand-->
         <p class="fs-5 mb-1">
           <span class="text-muted">Marca:</span>
-          <strong>Nike</strong>
+          <strong>{{shoe.brand}}</strong>
         </p>
         <!-- Product color -->
         <p class="fs-5 mb-1">
           <span class="text-muted">Color:</span>
-          <strong>Negro y azul</strong>
+          <strong>{{shoe.colour}}</strong>
         </p>
         <!--Product ID-->
         <p class="fs-5 mb-1">
           <span class="text-muted">ID:</span>
-          <strong>1</strong>
+          <strong>{{shoe.shoeId}}</strong>
         </p>
         <p class="fs-5 mb-1">
           <span class="text-muted">Deporte:</span>
-          <strong>Fútbol</strong>
+          <strong>{{shoe.sport}}</strong>
         </p>
         <!--Price-->
-        <p class="display-4 fw-bold mb-4">279,99 €</p>
+        <p class="display-4 fw-bold mb-4">{{shoe.price}} €</p>
         <!--Sizes: radio inputs styled as buttons (Bootstrap 5)-->
-        <fieldset class="mb-4">
-          <legend class="fs-5 fw-semibold mb-2">Tallas disponibles (EU)</legend>
-          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
-            <input type="radio" class="btn-check" name="talla" id="talla-38">
-            <label class="btn btn-outline-dark" for="talla-38">38</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-39">
-            <label class="btn btn-outline-dark" for="talla-39">39</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-40">
-            <label class="btn btn-outline-dark" for="talla-40">40</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-41">
-            <label class="btn btn-outline-dark" for="talla-41">41</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-42">
-            <label class="btn btn-outline-dark" for="talla-42">42</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-43">
-            <label class="btn btn-outline-dark" for="talla-43">43</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-44">
-            <label class="btn btn-outline-dark" for="talla-44">44</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-45">
-            <label class="btn btn-outline-dark" for="talla-45">45</label>
-            <input type="radio" class="btn-check" name="talla" id="talla-46">
-            <label class="btn btn-outline-dark" for="talla-46">46</label>
-          </div>
-        </fieldset>
+        
+<fieldset class="mb-4">
+    <legend class="fs-5 fw-semibold mb-2">
+        Tallas disponibles (EU)
+    </legend>
+
+    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+        {{#shoe.sizes}}
+        <span class="btn btn-outline-dark">
+            {{.}}
+        </span>
+        {{/shoe.sizes}}
+    </div>
+</fieldset>
+
         <!--Container to position the button underneath-->
         <div>
           <!--Link to go back to the home page-->
@@ -83,12 +75,12 @@
         <h1 class="display-5 fw-bold mb-3">Mercurial Superfly 10</h1>
         <!--Product description-->
         <p class="lead mb-4">
-          Esta zapatilla es espectacular porque cuenta con una unidad de amortiguación específica que aporta una sensación de propulsión adicional, además de una textura adherente para un control total del balón.
+         {{shoe.description}} 
         </p>
         <!--Product stock-->
         <div class="mb-3">
           <button type="button" class="btn btn-outline-dark">
-            Stock: 120 unidades
+            Stock: {{shoe.stock}} unidades
           </button>
         </div>
         <!--Buttons to edit and delete the product-->

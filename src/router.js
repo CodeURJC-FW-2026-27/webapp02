@@ -74,9 +74,11 @@ router.get('/shoe/:id', async (req, res) => {
         res.render('producto', { shoe });
 
     } catch (error) {
-        res.status(400).send('Invalid shoe ID');
+        console.error('Error loading shoe details:', error);
+        res.status(500).send('Error loading shoe details');
     }
 });
+
 
 
 // Route to render the form for adding a new shoe

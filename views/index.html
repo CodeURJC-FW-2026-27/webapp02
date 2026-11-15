@@ -30,58 +30,32 @@
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
 
-<!-- Search and sport filters -->
-<form action="/" method="GET" class="row g-3 mb-5 align-items-end">
-
-    <div class="col-md-5">
-        <label for="query" class="form-label">Buscar zapatillas</label>
-        <input
-            type="search"
-            class="form-control"
-            id="query"
-            name="query"
-            placeholder="Nombre de la zapatilla"
-            value="{{query}}">
-    </div>
-
-    <div class="col-md-4">
-        <label for="sport" class="form-label">Deporte</label>
-        <select class="form-select" id="sport" name="sport">
-            <option value="">Todos los deportes</option>
-            {{#sports}}
-            <option value="{{value}}" {{#selected}}selected{{/selected}}>
-                {{label}}
-            </option>
-            {{/sports}}
-        </select>
-    </div>
-
-    <div class="col-md-3 d-grid">
-        <button type="submit" class="btn btn-dark">
-            <i class="bi bi-search"></i> Buscar
-        </button>
-    </div>
-
-</form>
-
 
             <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
 
-                {{#shoes}}
-                <!-- Producto dinámico -->
-                <div class="col mb-5">
-                    <div class="card h-100 position-relative">
-                        <img class="card-img-top" src="/uploads/{{imageFilename}}" alt="{{name}}" />
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <h5 class="fw-bolder">{{name}}</h5>
-                                {{price}} €
-                            </div>
-                        </div>
-                        <a href="/shoe/{{_id}}" class="stretched-link"></a>
-                    </div>
-                </div>
-                {{/shoes}}
+                
+        {{#shoes}}
+    <div class="col mb-5">
+        <div class="card h-100 position-relative">
+
+        <img class="card-img-top"
+             src="/uploads/{{imageFilename}}"
+             alt="{{name}}">
+
+        <div class="card-body p-4">
+            <div class="text-center">
+                <h5 class="fw-bolder">{{name}}</h5>
+                <p>{{price}} €</p>
+            </div>
+        </div>
+
+        <a href="/shoe/{{_id}}" class="stretched-link"
+           aria-label="Ver detalles de {{name}}"></a>
+
+         </div>
+    </div>
+        {{/shoes}}
+
 
                 {{^shoes}}
                 <div class="col-12 text-center my-5">
