@@ -14,7 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!selectedSizesInput || !selectedSizesText) return;
 
-    const selectedSizes = new Set();
+    const initialSizes = selectedSizesInput.value
+    .split(',')
+    .filter(size => size.trim() !== '')
+    .map(Number);
+
+    const selectedSizes = new Set(initialSizes);
+
+    sizeButtons.forEach(button => {
+        if (selectedSizes.has(Number(button.dataset.talla))) {
+         button.classList.add('seleccionada');
+        }
+    });
+
+selectedSizesText.textContent = initialSizes.length
+    ? initialSizes.join(', ')
+    : 'Ninguna';
 
     sizeButtons.forEach(button => {
         button.addEventListener('click', () => {

@@ -35,3 +35,18 @@ export async function getShoe(id) {
 export async function countShoes() {
     return await shoes.countDocuments();
 }
+
+
+export async function updateShoe(id, updatedData) {
+    return await shoes.updateOne(
+        { _id: new ObjectId(id) },
+        { $set: updatedData }
+    );
+}
+
+
+export async function deleteShoe(id) {
+    return await shoes.deleteOne({
+        _id: new ObjectId(id)
+    });
+}

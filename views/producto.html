@@ -72,7 +72,7 @@
       </div>
       <!--Right Column: Title, information and stock-->
       <div class="col-12 col-md-6">
-        <h1 class="display-5 fw-bold mb-3">Mercurial Superfly 10</h1>
+        <h1 class="display-5 fw-bold mb-3">{{shoe.name}}</h1>
         <!--Product description-->
         <p class="lead mb-4">
          {{shoe.description}} 
@@ -85,13 +85,22 @@
         </div>
         <!--Buttons to edit and delete the product-->
         <div class="d-flex gap-2 mt-3">
-          <button type="button" class="btn btn-outline-success">
-            Editar
-          </button>
-          <button type="button" class="btn btn-outline-danger">
-            Borrar
-          </button>
-        </div>
+          
+        <a href="/shoe/{{shoe._id}}/edit" class="btn btn-warning">
+          <i class="bi bi-pencil-square"></i> Editar
+        </a>
+
+          
+    <form action="/shoe/{{shoe._id}}/delete"
+      method="POST"
+      onsubmit="return confirm('¿Seguro que quieres eliminar esta zapatilla? Esta acción no se puede deshacer.');">
+
+    <button type="submit" class="btn btn-outline-danger">
+        Borrar
+    </button>
+
+    </form>
+
       </div>
     </div>
     <!--Separator between the product and its reviews-->
