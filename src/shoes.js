@@ -10,12 +10,22 @@ export async function addShoe(shoe) {
     return await shoes.insertOne(shoe);
 }
 
-export async function deleteShoe(id) {
-    return await shoes.findOneAndDelete({ _id: new ObjectId(id) });
-}
-
-export async function getShoes() {
-    return await shoes.find().toArray();
+export async function getShoes(query = '', sport = '', page = 1, limit = 6) {
+    const filter = {};
+    if (query) {
+        // Search by name or brand (case-insensitive)
+        filter.$or = [
+            { name: { $regex: query, $options: 'i' } },
+            { brand: { $regex: query, $options: 'i' } }
+        ];
+    }
+    if (sport) {
+        filter.sport = sport;
+    }
+    const skip = (page - 1) * limit;
+    const total = await shoes.countDocuments(filter);
+    const items = await shoes.find(filter).skip(skip).limit(limit).toArray();
+    return { items, total };
 }
 
 export async function getShoe(id) {
