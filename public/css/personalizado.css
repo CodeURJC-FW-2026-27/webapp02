@@ -175,3 +175,29 @@ footer.bg-dark {
     color: #6c757d;
     border-color: #000000;
 }
+
+
+/* Size selection buttons */
+.btn-talla {
+    background-color: #ffffff;
+    color: #1e613d;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-talla:hover {
+    background-color: #edf5e8;
+    border-color: #1e613d;
+}
+
+/* Selected size */
+.btn-talla.seleccionada {
+    background-color: #1e613d;
+    color: #ffffff;
+    border-color: #000000;
+}

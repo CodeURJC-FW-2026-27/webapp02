@@ -1,7 +1,12 @@
 import express from 'express';
 import * as shoes from './shoes.js';
+import multer from 'multer';
 
 const router = express.Router();
+
+const upload = multer({
+    dest: shoes.UPLOADS_FOLDER
+});
 
 // Main route
 router.get('/', async (req, res) => {
@@ -61,6 +66,10 @@ router.get('/', async (req, res) => {
 });
 
 
+// Route to render the form for adding a new shoe
+router.get('/shoe/new', (req, res) => {
+    res.render('newProduct');
+});
 
  // Route to display the details of a shoe
 router.get('/shoe/:id', async (req, res) => {
@@ -81,9 +90,6 @@ router.get('/shoe/:id', async (req, res) => {
 
 
 
-// Route to render the form for adding a new shoe
-router.get('/shoe/new', (req, res) => {
-    res.render('newProduct');
-});
+
 
 export default router;
