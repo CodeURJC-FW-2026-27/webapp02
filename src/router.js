@@ -17,6 +17,27 @@ router.get('/', async (req, res) => {
     // 3. Calculate total pages (minimum 1 so "Página 1 de 1" shows even with 0 results)
     const totalPages = Math.max(1, Math.ceil(total / limit));
 
+
+    const sportOptions = [
+    { value: 'Futbol', label: 'Fútbol' },
+    { value: 'Running', label: 'Running' },
+    { value: 'Baloncesto', label: 'Baloncesto' }
+    ];
+
+    const sports = sportOptions.map(option => ({
+    ...option, 
+    selected: option.value === sport
+    }));
+
+    const pages = Array.from(
+    { length: totalPages },
+    (_, index) => ({
+        number: index + 1,
+        active: index + 1 === page
+    })
+    );
+
+
     // 4. Build extra URL query string to preserve active filters when changing pages
     let filterQuery = '';
     if (query) filterQuery += `&query=${encodeURIComponent(query)}`;
@@ -27,8 +48,10 @@ router.get('/', async (req, res) => {
         shoes: items,
         query,
         sport,
+        sports,                     //Desp. Options of sports
         currentPage: page,
         totalPages,
+        pages,                      // Nº page
         hasPrev: page > 1,          // True if on page 2 or higher (enables "Anterior" button)
         prevPage: page - 1,         // Page number for the "Anterior" link
         hasNext: page < totalPages, // True if more pages exist ahead (enables "Siguiente" button)
@@ -36,6 +59,25 @@ router.get('/', async (req, res) => {
         filterQuery                 // Appends &query=... and/or &sport=... to pagination links
     });
 });
+
+
+
+ // Route to display the details of a shoe
+router.get('/shoe/:id', async (req, res) => {
+    try {
+        const shoe = await shoes.getShoe(req.params.id);
+
+        if (!shoe) {
+            return res.status(404).send('Shoe not found');
+        }
+
+        res.render('producto', { shoe });
+
+    } catch (error) {
+        res.status(400).send('Invalid shoe ID');
+    }
+});
+
 
 // Route to render the form for adding a new shoe
 router.get('/shoe/new', (req, res) => {
