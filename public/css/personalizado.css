@@ -146,5 +146,32 @@ footer.bg-dark {
 }
 
 #search-button:hover {
-    background-color: #09bc24; /* Cambia al verde brillante de tus precios al pasar el mouse */
+    background-color: #1e613d; /* Cambia al verde brillante de tus precios al pasar el mouse */
+}
+/* Custom pagination colors to match STEP-UP green & black theme */
+.pagination .page-link {
+    background-color: #ffffff;
+    color: #1e613d;
+    border: 1px solid #000000;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #1e613d;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #1e613d;
+    border-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #edf5e8;
+    color: #6c757d;
+    border-color: #000000;
 }
