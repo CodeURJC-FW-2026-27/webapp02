@@ -27,21 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Highlight pre-selected buttons on load and attach click listeners
     sizeButtons.forEach((button) => {
         const size = button.getAttribute('data-talla');
-        if (selectedSizes.has(size)) {
-            button.classList.add('active', 'talla-seleccionada');
+       if (selectedSizes.has(size)) {
+            button.classList.add('active', 'seleccionada');
         }
 
         button.addEventListener('click', () => {
             if (selectedSizes.has(size)) {
                 selectedSizes.delete(size);
-                button.classList.remove('active', 'talla-seleccionada');
+                button.classList.remove('active', 'seleccionada');
             } else {
                 selectedSizes.add(size);
-                button.classList.add('active', 'talla-seleccionada');
+                button.classList.add('active', 'seleccionada');
             }
             syncSizesUI();
+        });
         });
     });
 
     syncSizesUI();
-});
+;

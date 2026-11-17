@@ -249,7 +249,10 @@ router.get('/shoe/:id/edit', async (req, res) => {
         formTitle: 'Editar zapatilla',
         action: `/shoe/${shoe._id}/edit`,
         cancelUrl: `/shoe/${shoe._id}`,
-        shoe
+        shoe,
+        isFootball: shoe.sport === 'Fútbol',
+        isBasketball: shoe.sport === 'Baloncesto',
+        isRunning: shoe.sport === 'Running'
     });
 });
 

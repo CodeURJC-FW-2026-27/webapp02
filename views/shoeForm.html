@@ -100,10 +100,10 @@
                         <div class="col-12 col-md-6">
                             <label for="sport" class="form-label">Deporte:</label>
                             <select class="form-select" id="sport" name="sport" required>
-                                <option value="">Selecciona un deporte</option>
-                                <option value="Fútbol">Fútbol</option>
-                                <option value="Baloncesto">Baloncesto</option>
-                                <option value="Running">Running</option>
+                            <option value="">Selecciona un deporte</option>
+                             <option value="Fútbol" {{#isFootball}}selected{{/isFootball}}>Fútbol</option>
+                             <option value="Baloncesto" {{#isBasketball}}selected{{/isBasketball}}>Baloncesto</option>
+                             <option value="Running" {{#isRunning}}selected{{/isRunning}}>Running</option>
                             </select>
                         </div>
 

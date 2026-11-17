@@ -84,7 +84,7 @@ footer.bg-dark {
 }
 
 
-/* Formulario para añadir zapatillas */
+/* Form container for shoes and messages */
 .formulario-zapatilla {
     max-width: 850px;
     margin: 0 auto;
@@ -115,12 +115,12 @@ footer.bg-dark {
 .search-container {
     display: inline-flex;
     align-items: center;
-    border: 1px solid #000000; /* Borde negro acorde a tus tarjetas */
-    border-radius: 50px;      /* Hace la barra en forma de píldora */
-    overflow: hidden;         /* Oculta lo que sobresalga para respetar el redondeo */
+    border: 1px solid #000000; /* Black border matching product cards */
+    border-radius: 50px;      /* Pill-shaped search bar */
+    overflow: hidden;         /* Clip overflow to preserve border radius */
     padding: 3px 6px;
-    background-color: #ffffff; /* Fondo blanco */
-    margin-left: auto; /* Esto empuja el buscador completamente hacia la derecha */
+    background-color: #ffffff; /* White background */
+    margin-left: auto; /* Push search bar to the right */
 }
 
 #search-input {
@@ -132,10 +132,10 @@ footer.bg-dark {
 }
 
 #search-button {
-    background-color: #1e613d; /* Usa tu verde oscuro principal del header */
-    color: white;             /* Color del ícono de la lupa */
+    background-color: #1e613d; /* Use primary dark green from header */
+    color: white;             /* Search icon color */
     border: none;
-    border-radius: 50%;       /* Convierte el botón en un círculo perfecto */
+    border-radius: 50%;       /* Make button a perfect circle */
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -146,7 +146,7 @@ footer.bg-dark {
 }
 
 #search-button:hover {
-    background-color: #1e613d; /* Cambia al verde brillante de tus precios al pasar el mouse */
+    background-color: #1e613d;  /* Hover background color */
 }
 /* Custom pagination colors to match STEP-UP green & black theme */
 .pagination .page-link {
