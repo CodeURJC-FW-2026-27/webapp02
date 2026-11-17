@@ -1,15 +1,30 @@
-{{> header}}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/personalizado.css" rel="stylesheet">
+    <link rel="icon" href="/images/StepUpLogo.png">
+    <title>Error - STEP-UP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
 
-<section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="card formulario-zapatilla p-5 text-center shadow-sm border-danger">
-            <h2 class="text-danger mb-3">Error al procesar los datos</h2>
-            <p class="lead mb-4">{{message}}</p>
-            <div>
-                <a href="{{backUrl}}" class="btn btn-outline-dark px-4">Volver al formulario</a>
+<body>
+    {{> header}}
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="formulario-zapatilla p-5 text-center shadow-sm border-danger">
+                <h2 class="text-danger mb-3">Error al procesar los datos</h2>
+                <p class="lead mb-4">{{message}}</p>
+                <div>
+                    <a href="{{backUrl}}" class="btn btn-outline-dark px-4">Volver al formulario</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-{{> footer}}
+    {{> footer}}
+</body>
+</html>

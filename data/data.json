@@ -1,3 +1,4 @@
+
 [
   {
     "shoeId": 1,
@@ -42,7 +43,20 @@
     "stock": 85,
     "description": "Diseñada para el máximo control y precisión en el golpeo sobre césped natural seco.",
     "imageFilename": "Predator Elite FG.jpg",
-    "reviews": []
+    "reviews": [
+      {
+        "user": "Carlos M.",
+        "date": "2026-10-10",
+        "rating": 5,
+        "text": "Un agarre espectacular y un control del balón excelente."
+      },
+      {
+        "user": "David L.",
+        "date": "2026-10-18",
+        "rating": 4,
+        "text": "Muy buen ajuste y comodidad, aunque cuesta un poco adaptarse a ellas."
+      }
+    ]
   },
   {
     "shoeId": 3,
@@ -92,9 +106,22 @@
     "colour": "Verde y negro",
     "sport": "Baloncesto",
     "stock": 40,
-    "description": " Perfil bajo, reactividad máxima con unidad Air Zoom Turbo y tracción de élite en pista.",
+    "description": "Perfil bajo, reactividad máxima con unidad Air Zoom Turbo y tracción de élite en pista.",
     "imageFilename": "Kobe 6 Protro.jpg",
-    "reviews": []
+    "reviews": [
+      {
+        "user": "Miguel R.",
+        "date": "2026-10-12",
+        "rating": 5,
+        "text": "Una de las mejores zapatillas de baloncesto que he probado."
+      },
+      {
+        "user": "Álvaro P.",
+        "date": "2026-10-20",
+        "rating": 4,
+        "text": "Muy buena tracción y respuesta en pista. Las recomiendo."
+      }
+    ]
   },
   {
     "shoeId": 7,

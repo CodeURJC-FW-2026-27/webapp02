@@ -1,4 +1,6 @@
+
 import fs from 'node:fs/promises';
+import { ObjectId } from 'mongodb';
 import * as shoes from './shoes.js';
 
 const UPLOADS_FOLDER = './uploads';
@@ -11,7 +13,16 @@ if (count === 0) {
     const dataString = await fs.readFile(DATA_FOLDER + '/' + dataFile, 'utf8');
     const initialShoes = JSON.parse(dataString);
 
-    for (let shoe of initialShoes) {
+    for (const shoe of initialShoes) {
+        if (Array.isArray(shoe.reviews)) {
+            shoe.reviews = shoe.reviews.map((review) => ({
+                _id: new ObjectId(),
+                ...review
+            }));
+        } else {
+            shoe.reviews = [];
+        }
+
         await shoes.addShoe(shoe);
     }
 

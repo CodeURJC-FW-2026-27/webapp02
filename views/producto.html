@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,232 +8,205 @@
   <title>Shoe details</title>
   <!-- Bootstrap icons-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <!--Bootstrap 5 styles-->
+  <!-- Bootstrap 5 styles-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!--Custom CSS file-->
+  <!-- Custom CSS file-->
   <link rel="stylesheet" href="/css/styles.css">
   <!-- Personalized CSS -->
   <link href="/css/personalizado.css" rel="stylesheet" />
 </head>
+
 <body>
   <!-- Navigation-->
   {{> header}}
-  <!--Main container centered on the page-->
+
+  <!-- Main container centered on the page-->
   <main class="container py-5">
-    <!--Row with align-items-start so the text is aligned to the top with the image-->
     <div class="row align-items-start">
-      <!--Left Column: Image, brand, price, sizes, ID and back button-->
+
+      <!-- Left Column: Image, brand, price, sizes, ID and back button-->
       <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
-        <!--Product image-->  
-      <img src="/uploads/{{shoe.imageFilename}}" class="img-fluid rounded mb-4" alt="{{shoe.name}}">
-      <!--Name-->
-      <h1 class="display-5 fw-bold mb-3">{{shoe.name}}</h1>
-        <!--Brand-->
+
+        <!-- Product image-->
+        <img src="/uploads/{{shoe.imageFilename}}" class="img-fluid rounded mb-4" alt="{{shoe.name}}">
+
+        <!-- Name-->
+        <h1 class="display-5 fw-bold mb-3">{{shoe.name}}</h1>
+
+        <!-- Brand-->
         <p class="fs-5 mb-1">
           <span class="text-muted">Marca:</span>
           <strong>{{shoe.brand}}</strong>
         </p>
-        <!-- Product color -->
+
+        <!-- Product color-->
         <p class="fs-5 mb-1">
           <span class="text-muted">Color:</span>
           <strong>{{shoe.colour}}</strong>
         </p>
-        <!--Product ID-->
+
+        <!-- Product ID-->
         <p class="fs-5 mb-1">
           <span class="text-muted">ID:</span>
           <strong>{{shoe.shoeId}}</strong>
         </p>
+
+        <!-- Sport-->
         <p class="fs-5 mb-1">
           <span class="text-muted">Deporte:</span>
           <strong>{{shoe.sport}}</strong>
         </p>
-        <!--Price-->
+
+        <!-- Price-->
         <p class="display-4 fw-bold mb-4">{{shoe.price}} €</p>
-        <!--Sizes: radio inputs styled as buttons (Bootstrap 5)-->
-        
-<fieldset class="mb-4">
-    <legend class="fs-5 fw-semibold mb-2">
-        Tallas disponibles (EU)
-    </legend>
 
-    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
-        {{#shoe.sizes}}
-        <span class="btn btn-outline-dark">
-            {{.}}
-        </span>
-        {{/shoe.sizes}}
-    </div>
-</fieldset>
+        <!-- Available sizes-->
+        <fieldset class="mb-4">
+          <legend class="fs-5 fw-semibold mb-2">
+            Tallas disponibles (EU)
+          </legend>
 
-        <!--Container to position the button underneath-->
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+            {{#shoe.sizes}}
+            <span class="btn btn-outline-dark">
+              {{.}}
+            </span>
+            {{/shoe.sizes}}
+          </div>
+        </fieldset>
+
+        <!-- Back button-->
         <div>
-          <!--Link to go back to the home page-->
           <a href="/" class="btn btn-outline-dark">Volver</a>
         </div>
       </div>
-      <!--Right Column: Title, information and stock-->
+
+      <!-- Right Column: Information and stock-->
       <div class="col-12 col-md-6">
         <h1 class="display-5 fw-bold mb-3">{{shoe.name}}</h1>
-        <!--Product description-->
+
+        <!-- Product description-->
         <p class="lead mb-4">
-         {{shoe.description}} 
+          {{shoe.description}}
         </p>
-        <!--Product stock-->
+
+        <!-- Product stock-->
         <div class="mb-3">
           <button type="button" class="btn btn-outline-dark">
             Stock: {{shoe.stock}} unidades
           </button>
         </div>
-        <!--Buttons to edit and delete the product-->
+
+        <!-- Buttons to edit and delete the product-->
         <div class="d-flex gap-2 mt-3">
-          
-        <a href="/shoe/{{shoe._id}}/edit" class="btn btn-warning">
-          <i class="bi bi-pencil-square"></i> Editar
-        </a>
 
-     <form action="/shoe/{{shoe._id}}/delete" method="post">
-    <button type="submit" class="btn btn-danger">Borrar zapatilla</button>
-    </form>
+          <a href="/shoe/{{shoe._id}}/edit" class="btn btn-warning">
+            <i class="bi bi-pencil-square"></i> Editar
+          </a>
 
+          <form action="/shoe/{{shoe._id}}/delete" method="POST">
+            <button type="submit" class="btn btn-danger">Borrar zapatilla</button>
+          </form>
+
+        </div>
       </div>
     </div>
-    <!--Separator between the product and its reviews-->
+
+    <!-- Separator between the product and its reviews-->
     <hr class="my-5">
-    <!--Customer reviews-->
+
+    <!-- Customer reviews-->
     <section id="resenas" aria-label="Opiniones de los clientes">
-      <!--Section title-->
+
+      <!-- Section title-->
       <h2 class="display-6 fw-bold text-center mb-4">Reseñas de clientes</h2>
-      <!--Review 1-->
-      <article class="card mb-3">
-        <div class="card-body">
-          <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
-            <h3 class="h5 mb-0">Raúl C.</h3>
-            <time datetime="2026-09-15" class="text-muted">
-              15/09/2026
-            </time>
+
+      <!-- Dynamic reviews-->
+      {{#shoe.reviews}}
+      <div class="card mb-3 p-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div>
+            <strong>{{user}}</strong>
+            <span class="text-muted ms-2">({{date}})</span>
           </div>
-          <p class="text-warning mb-2" aria-label="5 sobre 5 estrellas">
-            ★★★★★
-            <span class="text-dark fw-semibold">5/5</span>
-          </p>
-          <p class="mb-0">
-            Muy buenas zapatillas y muy cómodas.
-          </p>
+          <span class="badge bg-dark">Puntuación: {{rating}} / 5</span>
         </div>
-        <div class="d-flex gap-2 mt-3">
-          <button type="button" class="btn btn-outline-success btn-sm">
-            Editar
-          </button>
-          <button type="button" class="btn btn-outline-danger btn-sm">
-            Borrar
-          </button>
+
+        <p class="mb-3">{{text}}</p>
+
+        <div class="d-flex gap-2">
+          <a href="/shoe/{{shoe._id}}/review/{{_id}}/edit" class="btn btn-sm btn-outline-dark">Editar</a>
+
+          <form action="/shoe/{{shoe._id}}/review/{{_id}}/delete" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-sm btn-danger">Borrar</button>
+          </form>
         </div>
-      </article>
-      <!--Review 2-->
-      <article class="card mb-3">
-        <div class="card-body">
-          <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
-            <h3 class="h5 mb-0">Alejandro R.</h3>
-            <time datetime="2026-09-21" class="text-muted">
-              21/09/2026
-            </time>
-          </div>
-          <p class="text-warning mb-2" aria-label="4 sobre 5 estrellas">
-            ★★★★☆
-            <span class="text-dark fw-semibold">4/5</span>
-          </p>
-          <p class="mb-0">
-            Muy cómodas y ligeras, pero demasiado caras en mi opinión.
-          </p>
-        </div>
-        <div class="d-flex gap-2 mt-3">
-          <button type="button" class="btn btn-outline-success btn-sm">
-            Editar
-          </button>
-          <button type="button" class="btn btn-outline-danger btn-sm">
-            Borrar
-          </button>
-        </div>
-      </article>
-      <!--Review 3-->
-      <article class="card mb-3">
-        <div class="card-body">
-          <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
-            <h3 class="h5 mb-0">Sergio G.</h3>
-            <time datetime="2026-10-02" class="text-muted">
-              02/10/2026
-            </time>
-          </div>
-          <p class="text-warning mb-2" aria-label="1 sobre 5 estrellas">
-            ★☆☆☆☆
-            <span class="text-dark fw-semibold">1/5</span>
-          </p>
-          <p class="mb-0">
-            Zapatillas horribles, se me rompieron el primer día que las usé. No las recomiendo.
-          </p>
-        </div>
-        <div class="d-flex gap-2 mt-3">
-          <button type="button" class="btn btn-outline-success btn-sm">
-            Editar
-          </button>
-          <button type="button" class="btn btn-outline-danger btn-sm">
-            Borrar
-          </button>
-        </div>
-      </article>
+      </div>
+      {{/shoe.reviews}}
+
+      {{^shoe.reviews}}
+      <p class="text-muted">Todavía no hay reseñas para esta zapatilla. ¡Sé el primero en opinar!</p>
+      {{/shoe.reviews}}
+
     </section>
-    <!--Form to create a review-->
+
+    <!-- Form to create a review-->
     <section class="card mt-4 mb-4">
       <div class="card-body">
         <h2 class="h4 mb-4">Escribir una reseña</h2>
-        <form>
+
+        <form action="/shoe/{{shoe._id}}/review/new" method="POST">
+
           <div class="mb-3">
-            <label for="nombre" class="form-label">
+            <label for="user" class="form-label">
               Nombre de usuario
             </label>
             <input type="text" class="form-control"
-                   id="nombre" name="nombre"
-                   placeholder="Introduce tu nombre" required>
+                   id="user" name="user"
+                   placeholder="Introduce tu nombre"
+                   required minlength="2" maxlength="50">
           </div>
+
           <div class="mb-3">
-            <label for="fecha" class="form-label">
+            <label for="date" class="form-label">
               Fecha
             </label>
             <input type="date" class="form-control"
-                   id="fecha" name="fecha" required>
+                   id="date" name="date" required>
           </div>
+
           <div class="mb-3">
-            <label for="valoracion" class="form-label">
+            <label for="rating" class="form-label">
               Valoración
             </label>
-            <select class="form-select" id="valoracion"
-                    name="valoracion" required>
-              <option value="">Selecciona una valoración</option>
-              <option value="5">5 estrellas</option>
-              <option value="4">4 estrellas</option>
-              <option value="3">3 estrellas</option>
-              <option value="2">2 estrellas</option>
-              <option value="1">1 estrella</option>
-            </select>
+            <input type="number" class="form-control"
+                   id="rating" name="rating"
+                   min="1" max="5" required>
           </div>
+
           <div class="mb-3">
-            <label for="comentario" class="form-label">
+            <label for="text" class="form-label">
               Comentario
             </label>
             <textarea class="form-control"
-                      id="comentario" name="comentario"
+                      id="text" name="text"
                       rows="4"
                       placeholder="Escribe tu opinión sobre las zapatillas"
-                      required></textarea>
+                      required minlength="5" maxlength="300"></textarea>
           </div>
+
           <button type="submit" class="btn btn-success">
             Publicar reseña
           </button>
+
         </form>
       </div>
     </section>
+
   </main>
-<!-- Footer --> 
-{{> footer}}
+
+  <!-- Footer-->
+  {{> footer}}
+
 </body>
 </html>

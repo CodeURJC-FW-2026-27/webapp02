@@ -1,70 +1,47 @@
-/*!
-* Start Bootstrap - Shop Homepage v5.0.6 (https://startbootstrap.com/template/shop-homepage)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
-
-
 document.addEventListener('DOMContentLoaded', () => {
+    const selectedSizesInput = document.getElementById('selected-sizes');
+    const selectedSizesDisplay = document.getElementById('mostrar-talla');
     const sizeButtons = document.querySelectorAll('.btn-talla');
-    const selectedSizesInput = document.getElementById('talla-seleccionada');
-    const selectedSizesText = document.getElementById('mostrar-talla');
 
-    if (!selectedSizesInput || !selectedSizesText) return;
+    if (!selectedSizesInput || sizeButtons.length === 0) {
+        return;
+    }
 
-    const initialSizes = selectedSizesInput.value
-    .split(',')
-    .filter(size => size.trim() !== '')
-    .map(Number);
+    // Load initial sizes when editing an existing shoe (e.g., "38,40,42")
+    const selectedSizes = new Set(
+        selectedSizesInput.value
+            .split(',')
+            .map((s) => s.trim())
+            .filter((s) => s !== '')
+    );
 
-    const selectedSizes = new Set(initialSizes);
-
-    sizeButtons.forEach(button => {
-        if (selectedSizes.has(Number(button.dataset.talla))) {
-         button.classList.add('seleccionada');
+    function syncSizesUI() {
+        const sorted = Array.from(selectedSizes).sort((a, b) => Number(a) - Number(b));
+        const textValue = sorted.join(',');
+        selectedSizesInput.value = textValue;
+        if (selectedSizesDisplay) {
+            selectedSizesDisplay.textContent = textValue;
         }
-    });
+    }
 
-selectedSizesText.textContent = initialSizes.length
-    ? initialSizes.join(', ')
-    : 'Ninguna';
+    // Highlight pre-selected buttons on load and attach click listeners
+    sizeButtons.forEach((button) => {
+        const size = button.getAttribute('data-talla');
+        if (selectedSizes.has(size)) {
+            button.classList.add('active', 'talla-seleccionada');
+        }
 
-    sizeButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const size = Number(button.dataset.talla);
-
             if (selectedSizes.has(size)) {
                 selectedSizes.delete(size);
-                button.classList.remove('seleccionada');
+                button.classList.remove('active', 'talla-seleccionada');
             } else {
                 selectedSizes.add(size);
-                button.classList.add('seleccionada');
+                button.classList.add('active', 'talla-seleccionada');
             }
-
-            const sizes = [...selectedSizes].sort((a, b) => a - b);
-
-            selectedSizesInput.value = sizes.join(',');
-            selectedSizesText.textContent = sizes.length
-                ? sizes.join(', ')
-                : 'Ninguna';
+            syncSizesUI();
         });
     });
 
-    const form = selectedSizesInput.closest('form');
-
-    form.addEventListener('submit', event => {
-        if (selectedSizes.size === 0) {
-            event.preventDefault();
-        }
-    });
-
-    form.addEventListener('reset', () => {
-        selectedSizes.clear();
-        sizeButtons.forEach(button => button.classList.remove('btn-success'));
-        selectedSizesInput.value = '';
-        selectedSizesText.textContent = 'Ninguna';
-    });
+    syncSizesUI();
 });
-
