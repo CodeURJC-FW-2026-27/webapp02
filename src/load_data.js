@@ -1,4 +1,3 @@
-
 import fs from 'node:fs/promises';
 import { ObjectId } from 'mongodb';
 import * as shoes from './shoes.js';
@@ -31,3 +30,5 @@ if (count === 0) {
 
     console.log('Demo data loaded');
 }
+
+await shoes.ensureReviewIds();

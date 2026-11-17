@@ -82,6 +82,7 @@ export async function addReview(shoeId, review) {
 }
 
 export async function deleteReview(shoeId, reviewId) {
+    if (!ObjectId.isValid(shoeId) || !ObjectId.isValid(reviewId)) return null;
     return await shoes.updateOne(
         { _id: new ObjectId(shoeId) },
         { $pull: { reviews: { _id: new ObjectId(reviewId) } } }
@@ -89,12 +90,14 @@ export async function deleteReview(shoeId, reviewId) {
 }
 
 export async function getReview(shoeId, reviewId) {
+    if (!ObjectId.isValid(shoeId) || !ObjectId.isValid(reviewId)) return null;
     const shoe = await getShoe(shoeId);
     if (!shoe || !Array.isArray(shoe.reviews)) return null;
-    return shoe.reviews.find((r) => r._id.toString() === reviewId) || null;
+    return shoe.reviews.find((r) => r._id && r._id.toString() === reviewId) || null;
 }
 
 export async function updateReview(shoeId, reviewId, updatedReview) {
+    if (!ObjectId.isValid(shoeId) || !ObjectId.isValid(reviewId)) return null;
     return await shoes.updateOne(
         {
             _id: new ObjectId(shoeId),
@@ -109,4 +112,34 @@ export async function updateReview(shoeId, reviewId, updatedReview) {
             }
         }
     );
+}
+// Check if another shoe already has the exact same numeric shoeId
+export async function isShoeIdTaken(shoeId, excludeId = null) {
+    const filter = { shoeId };
+    if (excludeId && ObjectId.isValid(excludeId)) {
+        filter._id = { $ne: new ObjectId(excludeId) };
+    }
+    const existing = await shoes.findOne(filter);
+    return existing !== null;
+}
+
+// Ensure all existing reviews in the database have an _id field
+export async function ensureReviewIds() {
+    const allShoes = await shoes.find({ 'reviews.0': { $exists: true } }).toArray();
+    for (const shoe of allShoes) {
+        let updated = false;
+        const fixedReviews = shoe.reviews.map((review) => {
+            if (!review._id) {
+                updated = true;
+                return { _id: new ObjectId(), ...review };
+            }
+            return review;
+        });
+        if (updated) {
+            await shoes.updateOne(
+                { _id: shoe._id },
+                { $set: { reviews: fixedReviews } }
+            );
+        }
+    }
 }

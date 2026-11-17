@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Highlight pre-selected buttons on load and attach click listeners
     sizeButtons.forEach((button) => {
         const size = button.getAttribute('data-talla');
-       if (selectedSizes.has(size)) {
+        if (selectedSizes.has(size)) {
             button.classList.add('active', 'seleccionada');
         }
 
@@ -41,8 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             syncSizesUI();
         });
-        });
     });
 
     syncSizesUI();
-;
+});

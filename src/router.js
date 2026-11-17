@@ -6,6 +6,7 @@ const router = express.Router();
 const upload = multer({ dest: shoes.UPLOADS_FOLDER });
 
 // Validate shoe fields on the server side
+
 async function validateShoeData(body, file, isEdit = false, existingShoe = null) {
     const shoeId = parseInt(body.shoeId, 10);
     const name = (body.name || '').trim();
@@ -25,13 +26,32 @@ async function validateShoeData(body, file, isEdit = false, existingShoe = null)
         return { error: 'El nombre de la zapatilla debe comenzar por una letra mayúscula.' };
     }
 
-    const nameTaken = await shoes.isShoeNameTaken(name, isEdit ? existingShoe._id.toString() : null);
+    const nameTaken = await shoes.isShoeNameTaken(
+        name,
+        isEdit ? existingShoe._id.toString() : null
+    );
+
     if (nameTaken) {
         return { error: 'Ya existe otra zapatilla registrada con ese nombre.' };
     }
 
     if (Number.isNaN(shoeId) || shoeId < 1) {
         return { error: 'El identificador numérico de la zapatilla debe ser mayor que 0.' };
+    }
+
+    const idTaken = await shoes.isShoeIdTaken(
+        shoeId,
+        isEdit ? existingShoe._id.toString() : null
+    );
+
+    if (idTaken) {
+        return { error: 'Ya existe otra zapatilla registrada con ese ID.' };
+    }
+
+    const allowedSports = ['Fútbol', 'Baloncesto', 'Running'];
+
+    if (!allowedSports.includes(sport)) {
+        return { error: 'El deporte seleccionado no es válido.' };
     }
 
     if (Number.isNaN(price) || price <= 0 || price > 5000) {
@@ -76,6 +96,7 @@ async function validateShoeData(body, file, isEdit = false, existingShoe = null)
         }
     };
 }
+
 
 // Validate review fields on the server side
 function validateReviewData(body) {
@@ -196,6 +217,7 @@ router.get('/shoe/new', (req, res) => {
         formTitle: 'Añadir nueva zapatilla',
         action: '/shoe/new',
         cancelUrl: '/',
+        isNew: true,
         shoe: {}
     });
 });
