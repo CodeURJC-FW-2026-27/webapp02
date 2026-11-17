@@ -164,5 +164,31 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 * **`public/js/scripts.js`**: Código JavaScript ejecutado en el cliente para validaciones y comportamiento dinámico de la interfaz.
 * **`public/images/StepUpLogo.png`**: Logotipo e icono de la tienda STEP-UP.
 * **`uploads/`**: Directorio donde se almacenan las imágenes de las zapatillas cargadas inicialmente o subidas desde los formularios.
-* 
 
+### Video demostrativo
+
+### Participación de los integrantes
+
+#### Raúl Cabezas Vallecillo
+
+**5 commits más significativos:**
+
+**5 ficheros en los que más ha participado:**
+
+#### Sergio García García
+Yo lo que he hecho ha sido preparar la practica para que se pueda acceder a local host 3000. Lo 1º que hice fue el package.json mirando lo que tenía un ejercicio de clase para que tenga todas las dependencias de mongo, express, multer y mustache-express, para que se pueda hacer el npm install y luego poder hacer el npm start, y así poder poner nuestra web en http://localhost:3000/. Luego pase todos los archivos de la practica uno a sus respectivas carpetas, como por ejemplo poner en public las images, css y js. Luego poner en la carpeta views los html y también poner en src app.js, load_data.js, router.js y shoe.js.
+
+**5 commits más significativos:**
+- [El gitignore, pasar las imagenes , css y js a la carpeta public, y crear el app, router, load_data, y shoes.js que controla las bases de datos de MongoDB](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/3878cd61e9ec325f2df9cea76fe779052568fc01)(https://github.com/CodeURJC-FW-2026-27/webapp02/compare/6d42ab72b84759106aba76222d3c01efdb0f0a1a...f25929236440e8eba43f3e046150ae828ebaf8f1))
+- [data.json](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/51218e65ba40493dbee2c31bac9578ba9319aea6...ecedbaf22b2cbef2df2c389d129830bef0d9b7c0)
+- [cambios en el packagejson](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/51218e65ba40493dbee2c31bac9578ba9319aea6...ecedbaf22b2cbef2df2c389d129830bef0d9b7c0)
+- [shoes.js y load_data.js](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/c738001cbffb21f1eb967941185f1b3f93ea3202)
+- [Cambios hechos por el NPM install](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/96d6db276a566c8c615b7fa99af4800cd470e81a...6d42ab72b84759106aba76222d3c01efdb0f0a1a)
+
+**5 ficheros en los que más ha participado:**
+
+#### Alejandro Rodado López de la Reina
+
+**5 commits más significativos:**
+
+**5 ficheros en los que más ha participado:**
