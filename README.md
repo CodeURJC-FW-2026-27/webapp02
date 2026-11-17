@@ -186,6 +186,11 @@ Yo lo que he hecho ha sido preparar la practica para que se pueda acceder a loca
 - [Cambios hechos por el NPM install](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/96d6db276a566c8c615b7fa99af4800cd470e81a...6d42ab72b84759106aba76222d3c01efdb0f0a1a)
 
 **5 ficheros en los que más ha participado:**
+- [package.json](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/package.json)
+- [app.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/app.js)
+- [load_data](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/load_data.js)
+- [router.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/router.js)
+- [shoes.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/shoes.js)
 
 #### Alejandro Rodado López de la Reina
 
