@@ -90,15 +90,8 @@
           <i class="bi bi-pencil-square"></i> Editar
         </a>
 
-          
-    <form action="/shoe/{{shoe._id}}/delete"
-      method="POST"
-      onsubmit="return confirm('¿Seguro que quieres eliminar esta zapatilla? Esta acción no se puede deshacer.');">
-
-    <button type="submit" class="btn btn-outline-danger">
-        Borrar
-    </button>
-
+     <form action="/shoe/{{shoe._id}}/delete" method="post">
+    <button type="submit" class="btn btn-danger">Borrar zapatilla</button>
     </form>
 
       </div>

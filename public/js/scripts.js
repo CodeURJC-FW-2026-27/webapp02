@@ -57,7 +57,6 @@ selectedSizesText.textContent = initialSizes.length
     form.addEventListener('submit', event => {
         if (selectedSizes.size === 0) {
             event.preventDefault();
-            alert('Selecciona al menos una talla.');
         }
     });
 
