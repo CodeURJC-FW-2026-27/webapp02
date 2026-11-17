@@ -132,9 +132,7 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 
 ### Pasos para descargar, instalar y ejecutar la aplicación
 1. Clonar el repositorio de GitHub y acceder a la carpeta del proyecto:
-'''bash
-> git clone <^[[200~https://github.com/CodeURJC-FW-2026-27/webapp02~>
-> cd webapp02
+
 
 2. Asegurarse de que el servicio de MongoDB esta activo:
    sudo systemctl start mongod
