@@ -85,7 +85,7 @@ footer.bg-dark {
 
 
 /* Form container for shoes and messages */
-.formulario-zapatilla {
+.form-container {
     max-width: 850px;
     margin: 0 auto;
     background-color: #edf5e8;
@@ -93,7 +93,7 @@ footer.bg-dark {
     border-radius: 15px;
 }
 
-.formulario-zapatilla h2 {
+.form-container h2 {
     color: #1e613d;
 }
 
@@ -178,7 +178,7 @@ footer.bg-dark {
 
 
 /* Size selection buttons */
-.btn-talla {
+.btn-size {
     background-color: #ffffff;
     color: #1e613d;
     border: 1px solid #000000;
@@ -190,13 +190,13 @@ footer.bg-dark {
     transition: all 0.2s ease;
 }
 
-.btn-talla:hover {
+.btn-size:hover {
     background-color: #edf5e8;
     border-color: #1e613d;
 }
 
 /* Selected size */
-.btn-talla.seleccionada {
+.btn-size.selected {
     background-color: #1e613d;
     color: #ffffff;
     border-color: #000000;

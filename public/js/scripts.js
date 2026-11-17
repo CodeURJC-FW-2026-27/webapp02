@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const selectedSizesInput = document.getElementById('selected-sizes');
-    const selectedSizesDisplay = document.getElementById('mostrar-talla');
-    const sizeButtons = document.querySelectorAll('.btn-talla');
+    const selectedSizesDisplay = document.getElementById('show-size');
+    const sizeButtons = document.querySelectorAll('.btn-size');
 
     if (!selectedSizesInput || sizeButtons.length === 0) {
         return;
@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Highlight pre-selected buttons on load and attach click listeners
     sizeButtons.forEach((button) => {
-        const size = button.getAttribute('data-talla');
+        const size = button.getAttribute('data-size');
         if (selectedSizes.has(size)) {
-            button.classList.add('active', 'seleccionada');
+            button.classList.add('active', 'selected');
         }
 
         button.addEventListener('click', () => {
             if (selectedSizes.has(size)) {
                 selectedSizes.delete(size);
-                button.classList.remove('active', 'seleccionada');
+                button.classList.remove('active', 'selected');
             } else {
                 selectedSizes.add(size);
-                button.classList.add('active', 'seleccionada');
+                button.classList.add('active', 'selected');
             }
             syncSizesUI();
         });

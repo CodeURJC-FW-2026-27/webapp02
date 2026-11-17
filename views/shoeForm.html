@@ -16,7 +16,7 @@
 
     <section class="py-5">
         <div class="container px-4 px-lg-5">
-            <div class="formulario-zapatilla p-4 p-md-5">
+            <div class="form-container p-4 p-md-5">
 
                 <h2 class="text-center mb-4">{{formTitle}}</h2>
 
@@ -66,16 +66,16 @@
                         <div class="col-12 col-md-6">
                             <label for="sizes" class="form-label">Tallas:</label>
 
-                            <div class="tallas-botones">
-                                <button type="button" class="btn-talla" data-talla="38">38</button>
-                                <button type="button" class="btn-talla" data-talla="39">39</button>
-                                <button type="button" class="btn-talla" data-talla="40">40</button>
-                                <button type="button" class="btn-talla" data-talla="41">41</button>
-                                <button type="button" class="btn-talla" data-talla="42">42</button>
-                                <button type="button" class="btn-talla" data-talla="43">43</button>
-                                <button type="button" class="btn-talla" data-talla="44">44</button>
-                                <button type="button" class="btn-talla" data-talla="45">45</button>
-                                <button type="button" class="btn-talla" data-talla="46">46</button>
+                            <div class="size-buttons">
+                                <button type="button" class="btn-size" data-size="38">38</button>
+                                <button type="button" class="btn-size" data-size="39">39</button>
+                                <button type="button" class="btn-size" data-size="40">40</button>
+                                <button type="button" class="btn-size" data-size="41">41</button>
+                                <button type="button" class="btn-size" data-size="42">42</button>
+                                <button type="button" class="btn-size" data-size="43">43</button>
+                                <button type="button" class="btn-size" data-size="44">44</button>
+                                <button type="button" class="btn-size" data-size="45">45</button>
+                                <button type="button" class="btn-size" data-size="46">46</button>
                             </div>
 
                             <input type="hidden" id="selected-sizes"
@@ -83,7 +83,7 @@
 
                             <small class="text-muted">
                                 Tallas seleccionadas:
-                                <span id="mostrar-talla" class="fw-bold text-dark">{{shoe.sizesString}}</span>
+                                <span id="show-size" class="fw-bold text-dark">{{shoe.sizesString}}</span>
                             </small>
                         </div>
 
