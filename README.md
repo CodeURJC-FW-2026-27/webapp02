@@ -150,3 +150,19 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 
 ### Descripción de ficheros
 
+* **`package.json` y `package-lock.json`**: Definen la configuración del proyecto Node.js, el script de arranque (`npm start`) y las dependencias (`express`, `mustache-express`, `mongodb`, `multer`, etc.).
+* **`src/app.js`**: Punto de entrada de la aplicación. Configura el servidor Express, el motor de plantillas Mustache, las carpetas de recursos estáticos (`public` y `uploads`), el análisis de formularios y el enrutador principal en el puerto `3000`.
+* **`src/router.js`**: Gestiona todas las rutas HTTP de la tienda (listado principal con paginación, búsqueda y filtrado por deporte, detalle de zapatilla, alta, edición y borrado de productos, gestión de imágenes y envío de reseñas).
+* **`src/shoes.js`**: Módulo de acceso a datos que conecta con la base de datos `stepup` en MongoDB (colección `shoes`) y define las operaciones de consulta, inserción, actualización y borrado.
+* **`src/load_data.js`**: Script de inicialización ejecutado al arrancar que verifica si la colección en MongoDB está vacía y, en caso afirmativo, inserta los datos de ejemplo de `data/data.json` y copia las imágenes iniciales a `uploads/`.
+* **`data/data.json` y `data/images/`**: Dataset inicial de zapatillas con sus reseñas de ejemplo y las imágenes asociadas a cada modelo.
+* **`views/index.html`**: Plantilla Mustache de la página principal que renderiza dinámicamente el catálogo paginado, la barra de búsqueda y los filtros.
+* **`views/producto.html`**: Plantilla Mustache de la vista de detalle de cada zapatilla, incluyendo sus características, botones de edición/eliminación y sección de reseñas.
+* **`views/newProduct.html`**: Plantilla Mustache con el formulario para crear (y editar) zapatillas con subida de imagen.
+* **`views/header.html` y `views/footer.html`**: *Mustache Partials* que unifican la cabecera de navegación y el pie de página en todas las vistas para evitar código duplicado.
+* **`public/css/styles.css` y `public/css/personalizado.css`**: Hojas de estilo base y personalizadas de la interfaz web.
+* **`public/js/scripts.js`**: Código JavaScript ejecutado en el cliente para validaciones y comportamiento dinámico de la interfaz.
+* **`public/images/StepUpLogo.png`**: Logotipo e icono de la tienda STEP-UP.
+* **`uploads/`**: Directorio donde se almacenan las imágenes de las zapatillas cargadas inicialmente o subidas desde los formularios.
+* 
+
