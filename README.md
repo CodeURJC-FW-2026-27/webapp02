@@ -164,6 +164,7 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 * **`uploads/`**: Directorio donde se almacenan las imágenes de las zapatillas cargadas inicialmente o subidas desde los formularios.
 
 ### Video demostrativo
+[ACCEDE AL VIDEO PUBLICADO EN YOUTUBE (Su acceso solo es válido desde este enlace)](https://youtu.be/qKo6H4DjjCo)
 
 ### Participación de los integrantes
 
