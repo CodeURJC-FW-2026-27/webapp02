@@ -150,3 +150,50 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 
 ### Descripción de ficheros
 
+* **`package.json` y `package-lock.json`**: Definen la configuración del proyecto Node.js, el script de arranque (`npm start`) y las dependencias (`express`, `mustache-express`, `mongodb`, `multer`, etc.).
+* **`src/app.js`**: Punto de entrada de la aplicación. Configura el servidor Express, el motor de plantillas Mustache, las carpetas de recursos estáticos (`public` y `uploads`), el análisis de formularios y el enrutador principal en el puerto `3000`.
+* **`src/router.js`**: Gestiona todas las rutas HTTP de la tienda (listado principal con paginación, búsqueda y filtrado por deporte, detalle de zapatilla, alta, edición y borrado de productos, gestión de imágenes y envío de reseñas).
+* **`src/shoes.js`**: Módulo de acceso a datos que conecta con la base de datos `stepup` en MongoDB (colección `shoes`) y define las operaciones de consulta, inserción, actualización y borrado.
+* **`src/load_data.js`**: Script de inicialización ejecutado al arrancar que verifica si la colección en MongoDB está vacía y, en caso afirmativo, inserta los datos de ejemplo de `data/data.json` y copia las imágenes iniciales a `uploads/`.
+* **`data/data.json` y `data/images/`**: Dataset inicial de zapatillas con sus reseñas de ejemplo y las imágenes asociadas a cada modelo.
+* **`views/index.html`**: Plantilla Mustache de la página principal que renderiza dinámicamente el catálogo paginado, la barra de búsqueda y los filtros.
+* **`views/producto.html`**: Plantilla Mustache de la vista de detalle de cada zapatilla, incluyendo sus características, botones de edición/eliminación y sección de reseñas.
+* **`views/newProduct.html`**: Plantilla Mustache con el formulario para crear (y editar) zapatillas con subida de imagen.
+* **`views/header.html` y `views/footer.html`**: *Mustache Partials* que unifican la cabecera de navegación y el pie de página en todas las vistas para evitar código duplicado.
+* **`public/css/styles.css` y `public/css/personalizado.css`**: Hojas de estilo base y personalizadas de la interfaz web.
+* **`public/js/scripts.js`**: Código JavaScript ejecutado en el cliente para validaciones y comportamiento dinámico de la interfaz.
+* **`public/images/StepUpLogo.png`**: Logotipo e icono de la tienda STEP-UP.
+* **`uploads/`**: Directorio donde se almacenan las imágenes de las zapatillas cargadas inicialmente o subidas desde los formularios.
+
+### Video demostrativo
+
+### Participación de los integrantes
+
+#### Raúl Cabezas Vallecillo
+
+**5 commits más significativos:**
+
+**5 ficheros en los que más ha participado:**
+
+#### Sergio García García
+Yo lo que he hecho ha sido preparar la practica para que se pueda acceder a local host 3000. Lo 1º que hice fue el package.json mirando lo que tenía un ejercicio de clase para que tenga todas las dependencias de mongo, express, multer y mustache-express, para que se pueda hacer el npm install y luego poder hacer el npm start, y así poder poner nuestra web en http://localhost:3000/. Luego pase todos los archivos de la practica uno a sus respectivas carpetas, como por ejemplo poner en public las images, css y js. Luego poner en la carpeta views los html y también poner en src app.js, load_data.js, router.js y shoe.js.
+
+**5 commits más significativos:**
+- [El gitignore, pasar las imagenes , css y js a la carpeta public, y crear el app, router, load_data, y shoes.js que controla las bases de datos de MongoDB](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/6d42ab72b84759106aba76222d3c01efdb0f0a1a...f25929236440e8eba43f3e046150ae828ebaf8f1)
+- [data.json](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/51218e65ba40493dbee2c31bac9578ba9319aea6...ecedbaf22b2cbef2df2c389d129830bef0d9b7c0)
+- [cambios en el packagejson](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/51218e65ba40493dbee2c31bac9578ba9319aea6...ecedbaf22b2cbef2df2c389d129830bef0d9b7c0)
+- [shoes.js y load_data.js](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/c738001cbffb21f1eb967941185f1b3f93ea3202)
+- [Cambios hechos por el NPM install](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/96d6db276a566c8c615b7fa99af4800cd470e81a...6d42ab72b84759106aba76222d3c01efdb0f0a1a)
+
+**5 ficheros en los que más ha participado:**
+- [package.json](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/package.json)
+- [app.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/app.js)
+- [load_data](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/load_data.js)
+- [router.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/router.js)
+- [shoes.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/shoes.js)
+
+#### Alejandro Rodado López de la Reina
+
+**5 commits más significativos:**
+
+**5 ficheros en los que más ha participado:**
