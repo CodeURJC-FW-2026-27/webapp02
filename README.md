@@ -119,3 +119,34 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 - [personalizado.css](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/css/personalizado.css)
 - [index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/index.html)
 - [README.md](https://github.com/CodeURJC-FW-2026-27/webapp02/blame/main/README.md)
+
+
+# PRÁCTICA 2
+
+### Instrucciones de ejecución
+
+#### Requisitos previos
+* **Node.js**: v20.x o superior (Versión nuestra es 24.21.0)
+* **npm**:v10.x o superior (Versión nuestra es 11.19.0)
+* **MongoDB**: v7.0 o superior ejecutándose en local en el puerto 27017
+
+### Pasos para descargar, instalar y ejecutar la aplicación
+1. Clonar el repositorio de GitHub y acceder a la carpeta del proyecto:
+'''bash
+> git clone <^[[200~https://github.com/CodeURJC-FW-2026-27/webapp02~>
+> cd webapp02
+
+2. Asegurarse de que el servicio de MongoDB esta activo:
+   sudo systemctl start mongod
+
+3. Instalar las dependecias del proyecto:
+   npm install
+
+4. Arrancar servidor web:
+   npm start
+
+5. Abrir el navegador y acceder a:
+   http://localhost:3000/
+
+### Descripción de ficheros
+
