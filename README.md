@@ -193,7 +193,18 @@ Yo lo que he hecho ha sido preparar la practica para que se pueda acceder a loca
 - [shoes.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/shoes.js)
 
 #### Alejandro Rodado López de la Reina
+Durante mis intervenciones en la práctica 2 me he encargado de transformar los aspectos estáticos de la práctica 1 (datos cartón) por datos dinámicos correspondientes a las categorizaciones y demás, siguiendo las reglas y sintaxis de Mustache. Corregí un aspecto erróneo de la paginación y añadí la sección Añadir zapatilla, el multer y el dinamismo de esta misma sección. Editar y borrar producto también lo implementé yo siguiendo las mismas reglas. Y por último me encargué de realizar el video para hacer una experiencia de usuario en el readme.
 
 **5 commits más significativos:**
+⁃	[Corregir paginación y comienzo de la página dinámica producto](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/8bbf359622577ea63e372d016ae5b57d1f7a9caf...c081d54e2003f3bbed6a8430bd038e013c7120d0)
+⁃	[Producto Dinamico](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/c081d54e2003f3bbed6a8430bd038e013c7120d0...695e99347a6ef4e8822dd06c297f3e4a40442168)
+⁃	[Añadir zapatilla, multer, dinamismo](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/695e99347a6ef4e8822dd06c297f3e4a40442168...b1789977a2000eb1b2134a3f7232ec87ba626a17)
+⁃	[Editary borrar producto](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/b1789977a2000eb1b2134a3f7232ec87ba626a17...5de8f1fa4d02cb1d61aa1435731faeeede274204)
+⁃	[VideoPruebaUsuario]
 
 **5 ficheros en los que más ha participado:**
+⁃	[router.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/public/js/scripts.js)
+⁃	[scripts.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/router.js)
+⁃	[shoes.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/shoes.js)
+⁃	[producto.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/producto.html)
+⁃	[index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/index.html)
