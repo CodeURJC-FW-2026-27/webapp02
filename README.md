@@ -174,6 +174,7 @@ Mi participación en el proyecto ha abarcado tanto el desarrollo inicial de la i
 En la primera fase, trabajé principalmente en el diseño y mejora de las páginas de productos y reseñas, incluyendo la presentación de la información, la navegación y los elementos visuales. También participé en la creación de formularios y en la documentación del proyecto.
 En la segunda fase, contribuí a transformar la web en una aplicación dinámica. Trabajé en la integración de MongoDB, la creación de vistas reutilizables con Mustache y el desarrollo del catálogo dinámico, incorporando paginación y filtros.
 Por último, participé en la reestructuración del servidor y la lógica de la aplicación, mejorando las rutas, los formularios, las validaciones y la gestión de errores. También colaboré en la depuración general del proyecto y en la traducción de la interfaz al inglés.
+
 **5 commits más significativos:**
 - [CommitProvisionalSolucionErrores](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/4decc16150ea4953e2a357084605e0d5a2588d95)
 - [SolucionFuncionesRouter](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/52e02977492805cad1f69d33332ce9ca3c591c28)
