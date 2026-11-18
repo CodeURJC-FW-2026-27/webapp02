@@ -1,3 +1,4 @@
+
 import fs from 'node:fs/promises';
 import { ObjectId } from 'mongodb';
 import * as shoes from './shoes.js';
@@ -6,6 +7,7 @@ const UPLOADS_FOLDER = './uploads';
 const DATA_FOLDER = './data';
 const dataFile = 'data.json';
 
+// Check how many shoes are already stored in the database
 const count = await shoes.countShoes();
 
 if (count === 0) {
@@ -25,10 +27,12 @@ if (count === 0) {
         await shoes.addShoe(shoe);
     }
 
-    await fs.mkdir(UPLOADS_FOLDER, { recursive: true });
-    await fs.cp(DATA_FOLDER + '/images', UPLOADS_FOLDER, { recursive: true });
-
     console.log('Demo data loaded');
 }
 
+// Always ensure that the uploads directory contains the example images
+await fs.mkdir(UPLOADS_FOLDER, { recursive: true });
+await fs.cp(DATA_FOLDER + '/images', UPLOADS_FOLDER, { recursive: true });
+
+// Ensure all existing reviews have an ObjectId
 await shoes.ensureReviewIds();

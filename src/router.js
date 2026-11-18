@@ -179,8 +179,6 @@ async function validateShoeData(body, file, isEdit = false, existingShoe = null)
     };
 }
 
-
-// Validate review fields on the server side
 // Validate review fields on the server side
 function validateReviewData(body) {
     const readText = (value) =>
