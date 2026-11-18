@@ -175,18 +175,18 @@ En la primera fase, trabajé principalmente en el diseño y mejora de las págin
 En la segunda fase, contribuí a transformar la web en una aplicación dinámica. Trabajé en la integración de MongoDB, la creación de vistas reutilizables con Mustache y el desarrollo del catálogo dinámico, incorporando paginación y filtros.
 Por último, participé en la reestructuración del servidor y la lógica de la aplicación, mejorando las rutas, los formularios, las validaciones y la gestión de errores. También colaboré en la depuración general del proyecto y en la traducción de la interfaz al inglés.
 **5 commits más significativos:**
-[CommitProvisionalSolucionErrores](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/4decc16150ea4953e2a357084605e0d5a2588d95)
-[SolucionFuncionesRouter](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/52e02977492805cad1f69d33332ce9ca3c591c28)
-[TarjetasDinamicasPaginacionYFiltros](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2522a8e4e4c8605631a529ac092606cfd626afaa)
-[AñadirPartialsDeHeaderYFooter,ActualizarRutas](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/67a06ad0f5fdb0fddf18764621830ccb94e12323)
-[ProductoYReseñaUnidos](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/74fac2adb1d3e5318da02c7fb04a9d0a9f6837ca)
+-[CommitProvisionalSolucionErrores](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/4decc16150ea4953e2a357084605e0d5a2588d95)
+-[SolucionFuncionesRouter](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/52e02977492805cad1f69d33332ce9ca3c591c28)
+-[TarjetasDinamicasPaginacionYFiltros](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/2522a8e4e4c8605631a529ac092606cfd626afaa)
+-[AñadirPartialsDeHeaderYFooter,ActualizarRutas](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/67a06ad0f5fdb0fddf18764621830ccb94e12323)
+-[ProductoYReseñaUnidos](https://github.com/CodeURJC-FW-2026-27/webapp02/commit/74fac2adb1d3e5318da02c7fb04a9d0a9f6837ca)
 
 **5 ficheros en los que más ha participado:**
-[src/router.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/router.js)
-[views/producto.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/producto.html)
-[views/shoeForm.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/shoeForm.html)
-[views/index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/index.html)
-[src/shoes.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/shoes.js)
+-[src/router.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/router.js)
+-[views/producto.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/producto.html)
+-[views/shoeForm.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/shoeForm.html)
+-[views/index.html](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/views/index.html)
+-[src/shoes.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/src/shoes.js)
 
 #### Sergio García García
 Yo lo que he hecho ha sido preparar la practica para que se pueda acceder a local host 3000. Lo 1º que hice fue el package.json mirando lo que tenía un ejercicio de clase para que tenga todas las dependencias de mongo, express, multer y mustache-express, para que se pueda hacer el npm install y luego poder hacer el npm start, y así poder poner nuestra web en http://localhost:3000/. Luego pase todos los archivos de la practica uno a sus respectivas carpetas, como por ejemplo poner en public las images, css y js. Luego poner en la carpeta views los html y también poner en src app.js, load_data.js, router.js y shoe.js.
