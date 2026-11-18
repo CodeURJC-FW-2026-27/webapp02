@@ -164,6 +164,7 @@ Por último me encargué de la codificación del formulario de nuevo producto y 
 * **`uploads/`**: Directorio donde se almacenan las imágenes de las zapatillas cargadas inicialmente o subidas desde los formularios.
 
 ### Video demostrativo
+[ACCEDE AL VIDEO PUBLICADO EN YOUTUBE (Su acceso solo es válido desde este enlace)](https://youtu.be/qKo6H4DjjCo)
 
 ### Participación de los integrantes
 
@@ -198,7 +199,7 @@ Durante mis intervenciones en la práctica 2 me he encargado de transformar los 
 - [Producto Dinamico](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/c081d54e2003f3bbed6a8430bd038e013c7120d0...695e99347a6ef4e8822dd06c297f3e4a40442168)
 - [Añadir zapatilla, multer, dinamismo](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/695e99347a6ef4e8822dd06c297f3e4a40442168...b1789977a2000eb1b2134a3f7232ec87ba626a17)
 - [Editary borrar producto](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/b1789977a2000eb1b2134a3f7232ec87ba626a17...5de8f1fa4d02cb1d61aa1435731faeeede274204)
-- [VideoPruebaUsuario]
+- [README VideoExplicativoYoutube](https://github.com/CodeURJC-FW-2026-27/webapp02/compare/bb5fe96473e83cc8f3d4a30eee76004ce3a71797...2676da47a146123d323ee8042be57cf85967df98)
 
 **5 ficheros en los que más ha participado:**
 - [router.js](https://github.com/CodeURJC-FW-2026-27/webapp02/blob/main/public/js/scripts.js)
